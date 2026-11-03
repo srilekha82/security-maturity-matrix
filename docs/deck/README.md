@@ -15,6 +15,6 @@ engagement with leadership and staff, or to present results.
 The deck is generic. When presenting one organisation's results, add slides with screenshots of its hub page and
 reports (the Stage 3 skills in `.claude/skills/`). Keep those copies with the engagement, outside this repository.
 
-`build_deck.js` regenerates the deck with pptxgenjs (theme, layouts and sections; colours match the report skills).
+`build_deck.js` regenerates the deck with pptxgenjs (theme, layouts and sections; CSF function colours are NIST's, as in the profile template and the report skills).
 It needs `pptxgenjs`, `react`, `react-dom`, `react-icons`, `sharp` and `jszip`, and the `apply_theme.js` helper of the
 pptx skill (`PPTX_SKILL` environment variable): `node build_deck.js out.pptx`.

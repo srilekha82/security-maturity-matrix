@@ -53,7 +53,9 @@ Neutral and re-skinnable — to rebrand, change only these values in `:root`:
 ```
 
 Framework function colours (the same as in the two reports):
-- NIST CSF: Govern #334155, Identify #1D4ED8, Protect #0F766E, Detect #B45309, Respond #B91C1C, Recover #4D7C0F
+- NIST CSF (NIST's colours, as in `templates/csf_org_profile_template.xlsx`): Govern #F9F49D, Identify #4BB2E0,
+  Protect #9292EA, Detect #FAB746, Respond #F97367, Recover #7DF49F. They are light: use them as fills with `--ink`
+  text, never white text
 - AI RMF: Govern #4A90B8, Map #5BB5A2, Measure #D4A017, Manage #2B4F8C
 
 ## How to generate the page

@@ -18,7 +18,9 @@ const THEME = {
   },
 };
 const HEX = { ink: "1E293B", slate: "475569", accent: "7C3AED", deep: "4C1D95", soft: "F5F3FF", tint: "F1F5F9", white: "FFFFFF" };
-const CSF = { Govern: "334155", Identify: "1D4ED8", Protect: "0F766E", Detect: "B45309", Respond: "B91C1C", Recover: "4D7C0F" };
+// NIST CSF 2.0 function colours, as in templates/csf_org_profile_template.xlsx. Light: text on them is ink.
+const CSF = { Govern: "F9F49D", Identify: "4BB2E0", Protect: "9292EA", Detect: "FAB746", Respond: "F97367", Recover: "7DF49F" };
+const GOOD = "0F766E", BAD = "B91C1C"; // "security aware" / "if not" labels (not function colours)
 const AIF = { Govern: "4A90B8", Map: "5BB5A2", Measure: "D4A017", Manage: "2B4F8C" };
 
 async function icon(Comp, color = "FFFFFF", size = 256) {
@@ -108,7 +110,7 @@ async function iconCircle(slide, Comp, x, y, d, fill, name) {
   for (let i = 0; i < 2; i++) {
     const [ic, t, b] = why[i], x = 0.6 + i * 6.2;
     card(s, x, 1.85, 5.9, 3.65, HEX.tint, t + " card");
-    await iconCircle(s, ic, x + 0.35, 2.15, 0.8, i ? CSF.Protect : HEX.accent, t);
+    await iconCircle(s, ic, x + 0.35, 2.15, 0.8, i ? HEX.deep : HEX.accent, t);
     s.addText(t, tb({ x: x + 1.35, y: 2.3, w: 4.3, h: 0.5, bold: true, fontSize: 20, objectName: t + " title" }));
     s.addText(b.map((v, j) => ({ text: v, options: { bullet: true, breakLine: j < b.length - 1 } })),
       tb({ x: x + 0.4, y: 3.2, w: 5.2, h: 2.1, fontSize: 15, paraSpaceAfter: 6, objectName: t + " bullets" }));
@@ -131,8 +133,8 @@ async function iconCircle(slide, Comp, x, y, d, fill, name) {
     card(s, x, y, 5.9, 2.4, HEX.tint, t + " card");
     await iconCircle(s, ic, x + 0.3, y + 0.3, 0.7, HEX.ink, t);
     s.addText(t, tb({ x: x + 1.2, y: y + 0.4, w: 4.5, h: 0.5, bold: true, fontSize: 18, objectName: t + " title" }));
-    s.addText([{ text: "Security aware: ", options: { bold: true, color: CSF.Protect } }, { text: yes, options: { breakLine: true } },
-      { text: "If not: ", options: { bold: true, color: CSF.Respond } }, { text: no }],
+    s.addText([{ text: "Security aware: ", options: { bold: true, color: GOOD } }, { text: yes, options: { breakLine: true } },
+      { text: "If not: ", options: { bold: true, color: BAD } }, { text: no }],
       tb({ x: x + 0.35, y: y + 1.1, w: 5.25, h: 1.2, fontSize: 14, paraSpaceAfter: 6, objectName: t + " text" }));
   }
 
@@ -155,9 +157,9 @@ async function iconCircle(slide, Comp, x, y, d, fill, name) {
   flow.forEach(([n, d], i) => {
     const x = 0.6 + i * 2.48, fn = n[0] + n.slice(1).toLowerCase();
     card(s, x, 5.1, 2.2, 1.65, HEX.white, n + " step");
-    s.addShape("roundRect", { x, y: 5.1, w: 2.2, h: 1.65, rectRadius: 0.12, fill: { color: HEX.white }, line: { color: CSF[fn], width: 1.5 }, objectName: n + " outline" });
-    s.addText(n, tb({ x: x + 0.15, y: 5.22, w: 1.9, h: 0.35, bold: true, fontSize: 15, color: CSF[fn], objectName: n + " name" }));
-    s.addText(d, tb({ x: x + 0.15, y: 5.6, w: 1.95, h: 1.05, fontSize: 13, color: C.text2, objectName: n + " desc" }));
+    s.addShape("roundRect", { x, y: 5.1, w: 2.2, h: 1.65, rectRadius: 0.12, fill: { color: CSF[fn] }, line: { color: CSF[fn], width: 1.5 }, objectName: n + " fill" });
+    s.addText(n, tb({ x: x + 0.15, y: 5.22, w: 1.9, h: 0.35, bold: true, fontSize: 15, color: HEX.ink, objectName: n + " name" }));
+    s.addText(d, tb({ x: x + 0.15, y: 5.6, w: 1.95, h: 1.05, fontSize: 13, color: HEX.ink, objectName: n + " desc" }));
     if (i < 4) s.addText("→", tb({ x: x + 2.2, y: 5.65, w: 0.28, h: 0.5, align: "center", fontSize: 18, color: C.text2, objectName: "Arrow " + i }));
   });
 
@@ -171,7 +173,7 @@ async function iconCircle(slide, Comp, x, y, d, fill, name) {
     ["Recover", "Recovery planning, restoration, improvements, post-incident communications", "Operations · Technology · Supply Chain"]];
   const hdr = (t) => ({ text: t, options: { bold: true, color: HEX.white, fill: { color: HEX.ink }, fontSize: 14 } });
   const rows = [[hdr("NIST function"), hdr("What it covers"), hdr("Where it shows up in the organisation")]].concat(
-    six.map(([f, d, a]) => [{ text: f.toUpperCase(), options: { bold: true, color: HEX.white, fill: { color: CSF[f] } } }, { text: d }, { text: a, options: { color: HEX.slate } }]));
+    six.map(([f, d, a]) => [{ text: f.toUpperCase(), options: { bold: true, color: HEX.ink, fill: { color: CSF[f] } } }, { text: d }, { text: a, options: { color: HEX.slate } }]));
   s.addTable(rows, { x: 0.6, y: 1.8, w: 12.1, colW: [2.2, 5.6, 4.3], fontSize: 15, rowH: 0.72, valign: "middle", border: { type: "solid", pt: 0.75, color: "E2E8F0" }, fontFace: "Calibri", objectName: "Six functions table" });
 
   // 7 — Tiers

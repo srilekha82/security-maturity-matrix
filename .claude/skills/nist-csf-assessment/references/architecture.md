@@ -173,15 +173,20 @@ Theme tokens (neutral, re-skinnable — change only these to rebrand):
 
 Tier colours (sequential): T1 `#E2E8F0`, T2 `#A78BFA`, T3 `#7C3AED`, T4 `#4C1D95`
 
-Function colours (this repository's CSF palette; the same in the hub page):
+Function colours: the NIST CSF 2.0 colours, as in `templates/csf_org_profile_template.xlsx`
+(the same in the hub page and the deck; do not change them):
 ```
-Govern:   #334155
-Identify: #1D4ED8
-Protect:  #0F766E
-Detect:   #B45309
-Respond:  #B91C1C
-Recover:  #4D7C0F
+Govern:   #F9F49D
+Identify: #4BB2E0
+Protect:  #9292EA
+Detect:   #FAB746
+Respond:  #F97367
+Recover:  #7DF49F
 ```
+They are light: use them as fills (function headers, badges, bars, radar points) with
+`--ink` text on top, never white text. Never use one as text or as a thin line on a
+white background; where a line is needed (radar outline), draw it in `--ink` or
+`--slate` and mark each function with a filled dot or swatch in its colour.
 
 ---
 

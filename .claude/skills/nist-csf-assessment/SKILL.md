@@ -141,7 +141,8 @@ client data stays out of git).
 5. **Upload refreshes everything.** The upload handler on Tab 4 calls
    `fullRefresh()`, which re-renders all tabs, the radar and the roadmap.
 6. **Theme.** UI chrome uses the theme tokens in `references/architecture.md`;
-   change only those to rebrand. Function colours are the palette given there.
+   change only those to rebrand. Function colours are NIST's CSF colours given there
+   (the same as the template XLS); they are light, so text on them is `--ink`.
 7. **No CIS text.** References are shown as identifiers only (e.g. `CIS 6.3`); CIS
    Controls text is CC BY-NC-ND 4.0 and is not reproduced.
 
