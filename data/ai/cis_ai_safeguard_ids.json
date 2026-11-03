@@ -1,0 +1,5439 @@
+{
+  "description": "CIS v8.1 AI companion guide safeguards without their text (CC BY-NC-ND 4.0: the text stays in the local cis_ai_safeguards.json, made by parse_ai_rmf_sources.py from guides you download, see data/ai/source/README.md).",
+  "sources": {
+    "LLM": {
+      "file": "CIS_Controls_v8.1_AI_and_LLM_Companion_Guide_April_2026.pdf",
+      "sha256_16": "fae3d032d78cd956"
+    },
+    "MCP": {
+      "file": "CIS_Controls_v8.1_Model_Context_Protocol_Companion_Guide_April_2026.pdf",
+      "sha256_16": "4faa140a9b5f3071"
+    },
+    "AGENT": {
+      "file": "CIS_Controls_v8.1_AI_Agents_Companion_Guide_April_2026.pdf",
+      "sha256_16": "824ab8a2e829a11a"
+    }
+  },
+  "controls": {
+    "LLM-1": {
+      "guide": "LLM",
+      "control": 1,
+      "title": "Inventory and Control of Enterprise Assets"
+    },
+    "LLM-2": {
+      "guide": "LLM",
+      "control": 2,
+      "title": "Inventory and Control of Software Assets"
+    },
+    "LLM-3": {
+      "guide": "LLM",
+      "control": 3,
+      "title": "Data Protection"
+    },
+    "LLM-4": {
+      "guide": "LLM",
+      "control": 4,
+      "title": "Secure Configuration of Enterprise Assets and Software"
+    },
+    "LLM-5": {
+      "guide": "LLM",
+      "control": 5,
+      "title": "Account Management"
+    },
+    "LLM-6": {
+      "guide": "LLM",
+      "control": 6,
+      "title": "Access Control Management"
+    },
+    "LLM-7": {
+      "guide": "LLM",
+      "control": 7,
+      "title": "Continuous Vulnerability Management"
+    },
+    "LLM-8": {
+      "guide": "LLM",
+      "control": 8,
+      "title": "Audit Log Management"
+    },
+    "LLM-9": {
+      "guide": "LLM",
+      "control": 9,
+      "title": "Email and Web Browser Protections"
+    },
+    "LLM-10": {
+      "guide": "LLM",
+      "control": 10,
+      "title": "Malware Defenses"
+    },
+    "LLM-11": {
+      "guide": "LLM",
+      "control": 11,
+      "title": "Data Recovery"
+    },
+    "LLM-12": {
+      "guide": "LLM",
+      "control": 12,
+      "title": "Network Infrastructure Management"
+    },
+    "LLM-13": {
+      "guide": "LLM",
+      "control": 13,
+      "title": "Network Monitoring and Defense"
+    },
+    "LLM-14": {
+      "guide": "LLM",
+      "control": 14,
+      "title": "Security Awareness and Skills Training"
+    },
+    "LLM-15": {
+      "guide": "LLM",
+      "control": 15,
+      "title": "Service Provider Management"
+    },
+    "LLM-16": {
+      "guide": "LLM",
+      "control": 16,
+      "title": "Application Software Security"
+    },
+    "LLM-17": {
+      "guide": "LLM",
+      "control": 17,
+      "title": "Incident Response Management"
+    },
+    "LLM-18": {
+      "guide": "LLM",
+      "control": 18,
+      "title": "Penetration Testing"
+    },
+    "MCP-1": {
+      "guide": "MCP",
+      "control": 1,
+      "title": "Inventory and Control of Enterprise Assets"
+    },
+    "MCP-2": {
+      "guide": "MCP",
+      "control": 2,
+      "title": "Inventory and Control of Software Assets"
+    },
+    "MCP-3": {
+      "guide": "MCP",
+      "control": 3,
+      "title": "Data Protection"
+    },
+    "MCP-4": {
+      "guide": "MCP",
+      "control": 4,
+      "title": "Secure Configuration of Enterprise Assets and Software"
+    },
+    "MCP-5": {
+      "guide": "MCP",
+      "control": 5,
+      "title": "Account Management"
+    },
+    "MCP-6": {
+      "guide": "MCP",
+      "control": 6,
+      "title": "Access Control Management"
+    },
+    "MCP-7": {
+      "guide": "MCP",
+      "control": 7,
+      "title": "Continuous Vulnerability Management"
+    },
+    "MCP-8": {
+      "guide": "MCP",
+      "control": 8,
+      "title": "Audit Log Management"
+    },
+    "MCP-9": {
+      "guide": "MCP",
+      "control": 9,
+      "title": "Email and Web Browser Protections"
+    },
+    "MCP-10": {
+      "guide": "MCP",
+      "control": 10,
+      "title": "Malware Defenses"
+    },
+    "MCP-11": {
+      "guide": "MCP",
+      "control": 11,
+      "title": "Data Recovery"
+    },
+    "MCP-12": {
+      "guide": "MCP",
+      "control": 12,
+      "title": "Network Infrastructure Management"
+    },
+    "MCP-13": {
+      "guide": "MCP",
+      "control": 13,
+      "title": "Network Monitoring and Defense"
+    },
+    "MCP-14": {
+      "guide": "MCP",
+      "control": 14,
+      "title": "Security Awareness and Skills Training"
+    },
+    "MCP-15": {
+      "guide": "MCP",
+      "control": 15,
+      "title": "Service Provider Management"
+    },
+    "MCP-16": {
+      "guide": "MCP",
+      "control": 16,
+      "title": "Application Software Security"
+    },
+    "MCP-17": {
+      "guide": "MCP",
+      "control": 17,
+      "title": "Incident Response Management"
+    },
+    "MCP-18": {
+      "guide": "MCP",
+      "control": 18,
+      "title": "Penetration Testing"
+    },
+    "AGENT-1": {
+      "guide": "AGENT",
+      "control": 1,
+      "title": "Inventory and Control of Enterprise Assets"
+    },
+    "AGENT-2": {
+      "guide": "AGENT",
+      "control": 2,
+      "title": "Inventory and Control of Software Assets"
+    },
+    "AGENT-3": {
+      "guide": "AGENT",
+      "control": 3,
+      "title": "Data Protection"
+    },
+    "AGENT-4": {
+      "guide": "AGENT",
+      "control": 4,
+      "title": "Secure Configuration of Enterprise Assets and Software"
+    },
+    "AGENT-5": {
+      "guide": "AGENT",
+      "control": 5,
+      "title": "Account Management"
+    },
+    "AGENT-6": {
+      "guide": "AGENT",
+      "control": 6,
+      "title": "Access Control Management"
+    },
+    "AGENT-7": {
+      "guide": "AGENT",
+      "control": 7,
+      "title": "Continuous Vulnerability Management"
+    },
+    "AGENT-8": {
+      "guide": "AGENT",
+      "control": 8,
+      "title": "Audit Log Management"
+    },
+    "AGENT-9": {
+      "guide": "AGENT",
+      "control": 9,
+      "title": "Email and Web Browser Protections"
+    },
+    "AGENT-10": {
+      "guide": "AGENT",
+      "control": 10,
+      "title": "Malware Defenses"
+    },
+    "AGENT-11": {
+      "guide": "AGENT",
+      "control": 11,
+      "title": "Data Recovery"
+    },
+    "AGENT-12": {
+      "guide": "AGENT",
+      "control": 12,
+      "title": "Network Infrastructure Management"
+    },
+    "AGENT-13": {
+      "guide": "AGENT",
+      "control": 13,
+      "title": "Network Monitoring and Defense"
+    },
+    "AGENT-14": {
+      "guide": "AGENT",
+      "control": 14,
+      "title": "Security Awareness and Skills Training"
+    },
+    "AGENT-15": {
+      "guide": "AGENT",
+      "control": 15,
+      "title": "Service Provider Management"
+    },
+    "AGENT-16": {
+      "guide": "AGENT",
+      "control": 16,
+      "title": "Application Software Security"
+    },
+    "AGENT-17": {
+      "guide": "AGENT",
+      "control": 17,
+      "title": "Incident Response Management"
+    },
+    "AGENT-18": {
+      "guide": "AGENT",
+      "control": 18,
+      "title": "Penetration Testing"
+    }
+  },
+  "safeguards": [
+    {
+      "id": "LLM-1.1",
+      "cis_id": "1.1",
+      "guide": "LLM",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-1.2",
+      "cis_id": "1.2",
+      "guide": "LLM",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-1.3",
+      "cis_id": "1.3",
+      "guide": "LLM",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-1.4",
+      "cis_id": "1.4",
+      "guide": "LLM",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-1.5",
+      "cis_id": "1.5",
+      "guide": "LLM",
+      "control": 1,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.1",
+      "cis_id": "2.1",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.2",
+      "cis_id": "2.2",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.3",
+      "cis_id": "2.3",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.4",
+      "cis_id": "2.4",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.5",
+      "cis_id": "2.5",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.6",
+      "cis_id": "2.6",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-2.7",
+      "cis_id": "2.7",
+      "guide": "LLM",
+      "control": 2,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-3.1",
+      "cis_id": "3.1",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.2",
+      "cis_id": "3.2",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.3",
+      "cis_id": "3.3",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.4",
+      "cis_id": "3.4",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.5",
+      "cis_id": "3.5",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.6",
+      "cis_id": "3.6",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.7",
+      "cis_id": "3.7",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.8",
+      "cis_id": "3.8",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.9",
+      "cis_id": "3.9",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-3.10",
+      "cis_id": "3.10",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.11",
+      "cis_id": "3.11",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.12",
+      "cis_id": "3.12",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.13",
+      "cis_id": "3.13",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-3.14",
+      "cis_id": "3.14",
+      "guide": "LLM",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.1",
+      "cis_id": "4.1",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.2",
+      "cis_id": "4.2",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-4.3",
+      "cis_id": "4.3",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-4.4",
+      "cis_id": "4.4",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.5",
+      "cis_id": "4.5",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.6",
+      "cis_id": "4.6",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.7",
+      "cis_id": "4.7",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-4.8",
+      "cis_id": "4.8",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.9",
+      "cis_id": "4.9",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-4.10",
+      "cis_id": "4.10",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-4.11",
+      "cis_id": "4.11",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-4.12",
+      "cis_id": "4.12",
+      "guide": "LLM",
+      "control": 4,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.1",
+      "cis_id": "5.1",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.2",
+      "cis_id": "5.2",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.3",
+      "cis_id": "5.3",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.4",
+      "cis_id": "5.4",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.5",
+      "cis_id": "5.5",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-5.6",
+      "cis_id": "5.6",
+      "guide": "LLM",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.1",
+      "cis_id": "6.1",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.2",
+      "cis_id": "6.2",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.3",
+      "cis_id": "6.3",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.4",
+      "cis_id": "6.4",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.5",
+      "cis_id": "6.5",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.6",
+      "cis_id": "6.6",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.7",
+      "cis_id": "6.7",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-6.8",
+      "cis_id": "6.8",
+      "guide": "LLM",
+      "control": 6,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.1",
+      "cis_id": "7.1",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.2",
+      "cis_id": "7.2",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.3",
+      "cis_id": "7.3",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.4",
+      "cis_id": "7.4",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.5",
+      "cis_id": "7.5",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.6",
+      "cis_id": "7.6",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-7.7",
+      "cis_id": "7.7",
+      "guide": "LLM",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.1",
+      "cis_id": "8.1",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.2",
+      "cis_id": "8.2",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.3",
+      "cis_id": "8.3",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.4",
+      "cis_id": "8.4",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.5",
+      "cis_id": "8.5",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.6",
+      "cis_id": "8.6",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.7",
+      "cis_id": "8.7",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.8",
+      "cis_id": "8.8",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.9",
+      "cis_id": "8.9",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.10",
+      "cis_id": "8.10",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.11",
+      "cis_id": "8.11",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-8.12",
+      "cis_id": "8.12",
+      "guide": "LLM",
+      "control": 8,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.1",
+      "cis_id": "9.1",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.2",
+      "cis_id": "9.2",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.3",
+      "cis_id": "9.3",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.4",
+      "cis_id": "9.4",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.5",
+      "cis_id": "9.5",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-9.6",
+      "cis_id": "9.6",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-9.7",
+      "cis_id": "9.7",
+      "guide": "LLM",
+      "control": 9,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-10.1",
+      "cis_id": "10.1",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-10.2",
+      "cis_id": "10.2",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-10.3",
+      "cis_id": "10.3",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-10.4",
+      "cis_id": "10.4",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-10.5",
+      "cis_id": "10.5",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-10.6",
+      "cis_id": "10.6",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-10.7",
+      "cis_id": "10.7",
+      "guide": "LLM",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-11.1",
+      "cis_id": "11.1",
+      "guide": "LLM",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-11.2",
+      "cis_id": "11.2",
+      "guide": "LLM",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-11.3",
+      "cis_id": "11.3",
+      "guide": "LLM",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-11.4",
+      "cis_id": "11.4",
+      "guide": "LLM",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-11.5",
+      "cis_id": "11.5",
+      "guide": "LLM",
+      "control": 11,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-12.1",
+      "cis_id": "12.1",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-12.2",
+      "cis_id": "12.2",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-12.3",
+      "cis_id": "12.3",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-12.4",
+      "cis_id": "12.4",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-12.5",
+      "cis_id": "12.5",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-12.6",
+      "cis_id": "12.6",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-12.7",
+      "cis_id": "12.7",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-12.8",
+      "cis_id": "12.8",
+      "guide": "LLM",
+      "control": 12,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.1",
+      "cis_id": "13.1",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.2",
+      "cis_id": "13.2",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.3",
+      "cis_id": "13.3",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.4",
+      "cis_id": "13.4",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.5",
+      "cis_id": "13.5",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.6",
+      "cis_id": "13.6",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.7",
+      "cis_id": "13.7",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.8",
+      "cis_id": "13.8",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.9",
+      "cis_id": "13.9",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-13.10",
+      "cis_id": "13.10",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-13.11",
+      "cis_id": "13.11",
+      "guide": "LLM",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.1",
+      "cis_id": "14.1",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.2",
+      "cis_id": "14.2",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.3",
+      "cis_id": "14.3",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "LLM-14.4",
+      "cis_id": "14.4",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.5",
+      "cis_id": "14.5",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.6",
+      "cis_id": "14.6",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.7",
+      "cis_id": "14.7",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.8",
+      "cis_id": "14.8",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-14.9",
+      "cis_id": "14.9",
+      "guide": "LLM",
+      "control": 14,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.1",
+      "cis_id": "15.1",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.2",
+      "cis_id": "15.2",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.3",
+      "cis_id": "15.3",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.4",
+      "cis_id": "15.4",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.5",
+      "cis_id": "15.5",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.6",
+      "cis_id": "15.6",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-15.7",
+      "cis_id": "15.7",
+      "guide": "LLM",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.1",
+      "cis_id": "16.1",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.2",
+      "cis_id": "16.2",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.3",
+      "cis_id": "16.3",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.4",
+      "cis_id": "16.4",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.5",
+      "cis_id": "16.5",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.6",
+      "cis_id": "16.6",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.7",
+      "cis_id": "16.7",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.8",
+      "cis_id": "16.8",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.9",
+      "cis_id": "16.9",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.10",
+      "cis_id": "16.10",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.11",
+      "cis_id": "16.11",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.12",
+      "cis_id": "16.12",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.13",
+      "cis_id": "16.13",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-16.14",
+      "cis_id": "16.14",
+      "guide": "LLM",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.1",
+      "cis_id": "17.1",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.2",
+      "cis_id": "17.2",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.3",
+      "cis_id": "17.3",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.4",
+      "cis_id": "17.4",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.5",
+      "cis_id": "17.5",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.6",
+      "cis_id": "17.6",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.7",
+      "cis_id": "17.7",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.8",
+      "cis_id": "17.8",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-17.9",
+      "cis_id": "17.9",
+      "guide": "LLM",
+      "control": 17,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-18.1",
+      "cis_id": "18.1",
+      "guide": "LLM",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-18.2",
+      "cis_id": "18.2",
+      "guide": "LLM",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-18.3",
+      "cis_id": "18.3",
+      "guide": "LLM",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-18.4",
+      "cis_id": "18.4",
+      "guide": "LLM",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "LLM-18.5",
+      "cis_id": "18.5",
+      "guide": "LLM",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-1.1",
+      "cis_id": "1.1",
+      "guide": "MCP",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-1.2",
+      "cis_id": "1.2",
+      "guide": "MCP",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-1.3",
+      "cis_id": "1.3",
+      "guide": "MCP",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-1.4",
+      "cis_id": "1.4",
+      "guide": "MCP",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-1.5",
+      "cis_id": "1.5",
+      "guide": "MCP",
+      "control": 1,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.1",
+      "cis_id": "2.1",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.2",
+      "cis_id": "2.2",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.3",
+      "cis_id": "2.3",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.4",
+      "cis_id": "2.4",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.5",
+      "cis_id": "2.5",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.6",
+      "cis_id": "2.6",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-2.7",
+      "cis_id": "2.7",
+      "guide": "MCP",
+      "control": 2,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.1",
+      "cis_id": "3.1",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.2",
+      "cis_id": "3.2",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.3",
+      "cis_id": "3.3",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.4",
+      "cis_id": "3.4",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.5",
+      "cis_id": "3.5",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.6",
+      "cis_id": "3.6",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.7",
+      "cis_id": "3.7",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.8",
+      "cis_id": "3.8",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.9",
+      "cis_id": "3.9",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-3.10",
+      "cis_id": "3.10",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.11",
+      "cis_id": "3.11",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.12",
+      "cis_id": "3.12",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.13",
+      "cis_id": "3.13",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-3.14",
+      "cis_id": "3.14",
+      "guide": "MCP",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.1",
+      "cis_id": "4.1",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.2",
+      "cis_id": "4.2",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.3",
+      "cis_id": "4.3",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-4.4",
+      "cis_id": "4.4",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.5",
+      "cis_id": "4.5",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.6",
+      "cis_id": "4.6",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.7",
+      "cis_id": "4.7",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-4.8",
+      "cis_id": "4.8",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.9",
+      "cis_id": "4.9",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-4.10",
+      "cis_id": "4.10",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-4.11",
+      "cis_id": "4.11",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-4.12",
+      "cis_id": "4.12",
+      "guide": "MCP",
+      "control": 4,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-5.1",
+      "cis_id": "5.1",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-5.2",
+      "cis_id": "5.2",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-5.3",
+      "cis_id": "5.3",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-5.4",
+      "cis_id": "5.4",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-5.5",
+      "cis_id": "5.5",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-5.6",
+      "cis_id": "5.6",
+      "guide": "MCP",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.1",
+      "cis_id": "6.1",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.2",
+      "cis_id": "6.2",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.3",
+      "cis_id": "6.3",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.4",
+      "cis_id": "6.4",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-6.5",
+      "cis_id": "6.5",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.6",
+      "cis_id": "6.6",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.7",
+      "cis_id": "6.7",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-6.8",
+      "cis_id": "6.8",
+      "guide": "MCP",
+      "control": 6,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.1",
+      "cis_id": "7.1",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.2",
+      "cis_id": "7.2",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.3",
+      "cis_id": "7.3",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-7.4",
+      "cis_id": "7.4",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.5",
+      "cis_id": "7.5",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.6",
+      "cis_id": "7.6",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-7.7",
+      "cis_id": "7.7",
+      "guide": "MCP",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.1",
+      "cis_id": "8.1",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.2",
+      "cis_id": "8.2",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.3",
+      "cis_id": "8.3",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.4",
+      "cis_id": "8.4",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.5",
+      "cis_id": "8.5",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.6",
+      "cis_id": "8.6",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-8.7",
+      "cis_id": "8.7",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.8",
+      "cis_id": "8.8",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.9",
+      "cis_id": "8.9",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.10",
+      "cis_id": "8.10",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.11",
+      "cis_id": "8.11",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-8.12",
+      "cis_id": "8.12",
+      "guide": "MCP",
+      "control": 8,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.1",
+      "cis_id": "9.1",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.2",
+      "cis_id": "9.2",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.3",
+      "cis_id": "9.3",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.4",
+      "cis_id": "9.4",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.5",
+      "cis_id": "9.5",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-9.6",
+      "cis_id": "9.6",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-9.7",
+      "cis_id": "9.7",
+      "guide": "MCP",
+      "control": 9,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-10.1",
+      "cis_id": "10.1",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-10.2",
+      "cis_id": "10.2",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-10.3",
+      "cis_id": "10.3",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-10.4",
+      "cis_id": "10.4",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-10.5",
+      "cis_id": "10.5",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-10.6",
+      "cis_id": "10.6",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-10.7",
+      "cis_id": "10.7",
+      "guide": "MCP",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-11.1",
+      "cis_id": "11.1",
+      "guide": "MCP",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-11.2",
+      "cis_id": "11.2",
+      "guide": "MCP",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-11.3",
+      "cis_id": "11.3",
+      "guide": "MCP",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-11.4",
+      "cis_id": "11.4",
+      "guide": "MCP",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-11.5",
+      "cis_id": "11.5",
+      "guide": "MCP",
+      "control": 11,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-12.1",
+      "cis_id": "12.1",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-12.2",
+      "cis_id": "12.2",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-12.3",
+      "cis_id": "12.3",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-12.4",
+      "cis_id": "12.4",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-12.5",
+      "cis_id": "12.5",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-12.6",
+      "cis_id": "12.6",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-12.7",
+      "cis_id": "12.7",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-12.8",
+      "cis_id": "12.8",
+      "guide": "MCP",
+      "control": 12,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.1",
+      "cis_id": "13.1",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.2",
+      "cis_id": "13.2",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.3",
+      "cis_id": "13.3",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.4",
+      "cis_id": "13.4",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.5",
+      "cis_id": "13.5",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-13.6",
+      "cis_id": "13.6",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.7",
+      "cis_id": "13.7",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.8",
+      "cis_id": "13.8",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.9",
+      "cis_id": "13.9",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-13.10",
+      "cis_id": "13.10",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-13.11",
+      "cis_id": "13.11",
+      "guide": "MCP",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.1",
+      "cis_id": "14.1",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.2",
+      "cis_id": "14.2",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.3",
+      "cis_id": "14.3",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.4",
+      "cis_id": "14.4",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.5",
+      "cis_id": "14.5",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.6",
+      "cis_id": "14.6",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.7",
+      "cis_id": "14.7",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.8",
+      "cis_id": "14.8",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-14.9",
+      "cis_id": "14.9",
+      "guide": "MCP",
+      "control": 14,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.1",
+      "cis_id": "15.1",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.2",
+      "cis_id": "15.2",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.3",
+      "cis_id": "15.3",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.4",
+      "cis_id": "15.4",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.5",
+      "cis_id": "15.5",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.6",
+      "cis_id": "15.6",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-15.7",
+      "cis_id": "15.7",
+      "guide": "MCP",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.1",
+      "cis_id": "16.1",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.2",
+      "cis_id": "16.2",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.3",
+      "cis_id": "16.3",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.4",
+      "cis_id": "16.4",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.5",
+      "cis_id": "16.5",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.6",
+      "cis_id": "16.6",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.7",
+      "cis_id": "16.7",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.8",
+      "cis_id": "16.8",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.9",
+      "cis_id": "16.9",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.10",
+      "cis_id": "16.10",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.11",
+      "cis_id": "16.11",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.12",
+      "cis_id": "16.12",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.13",
+      "cis_id": "16.13",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-16.14",
+      "cis_id": "16.14",
+      "guide": "MCP",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.1",
+      "cis_id": "17.1",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.2",
+      "cis_id": "17.2",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.3",
+      "cis_id": "17.3",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.4",
+      "cis_id": "17.4",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.5",
+      "cis_id": "17.5",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.6",
+      "cis_id": "17.6",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "MCP-17.7",
+      "cis_id": "17.7",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.8",
+      "cis_id": "17.8",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-17.9",
+      "cis_id": "17.9",
+      "guide": "MCP",
+      "control": 17,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-18.1",
+      "cis_id": "18.1",
+      "guide": "MCP",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-18.2",
+      "cis_id": "18.2",
+      "guide": "MCP",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-18.3",
+      "cis_id": "18.3",
+      "guide": "MCP",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-18.4",
+      "cis_id": "18.4",
+      "guide": "MCP",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "MCP-18.5",
+      "cis_id": "18.5",
+      "guide": "MCP",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-1.1",
+      "cis_id": "1.1",
+      "guide": "AGENT",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-1.2",
+      "cis_id": "1.2",
+      "guide": "AGENT",
+      "control": 1,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-1.3",
+      "cis_id": "1.3",
+      "guide": "AGENT",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-1.4",
+      "cis_id": "1.4",
+      "guide": "AGENT",
+      "control": 1,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-1.5",
+      "cis_id": "1.5",
+      "guide": "AGENT",
+      "control": 1,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.1",
+      "cis_id": "2.1",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.2",
+      "cis_id": "2.2",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.3",
+      "cis_id": "2.3",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.4",
+      "cis_id": "2.4",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.5",
+      "cis_id": "2.5",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.6",
+      "cis_id": "2.6",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-2.7",
+      "cis_id": "2.7",
+      "guide": "AGENT",
+      "control": 2,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.1",
+      "cis_id": "3.1",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.2",
+      "cis_id": "3.2",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.3",
+      "cis_id": "3.3",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.4",
+      "cis_id": "3.4",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.5",
+      "cis_id": "3.5",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.6",
+      "cis_id": "3.6",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.7",
+      "cis_id": "3.7",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.8",
+      "cis_id": "3.8",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.9",
+      "cis_id": "3.9",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-3.10",
+      "cis_id": "3.10",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.11",
+      "cis_id": "3.11",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.12",
+      "cis_id": "3.12",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.13",
+      "cis_id": "3.13",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-3.14",
+      "cis_id": "3.14",
+      "guide": "AGENT",
+      "control": 3,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.1",
+      "cis_id": "4.1",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.2",
+      "cis_id": "4.2",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.3",
+      "cis_id": "4.3",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-4.4",
+      "cis_id": "4.4",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.5",
+      "cis_id": "4.5",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.6",
+      "cis_id": "4.6",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.7",
+      "cis_id": "4.7",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.8",
+      "cis_id": "4.8",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-4.9",
+      "cis_id": "4.9",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-4.10",
+      "cis_id": "4.10",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-4.11",
+      "cis_id": "4.11",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-4.12",
+      "cis_id": "4.12",
+      "guide": "AGENT",
+      "control": 4,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-5.1",
+      "cis_id": "5.1",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-5.2",
+      "cis_id": "5.2",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-5.3",
+      "cis_id": "5.3",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-5.4",
+      "cis_id": "5.4",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-5.5",
+      "cis_id": "5.5",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-5.6",
+      "cis_id": "5.6",
+      "guide": "AGENT",
+      "control": 5,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.1",
+      "cis_id": "6.1",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.2",
+      "cis_id": "6.2",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.3",
+      "cis_id": "6.3",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.4",
+      "cis_id": "6.4",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-6.5",
+      "cis_id": "6.5",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.6",
+      "cis_id": "6.6",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.7",
+      "cis_id": "6.7",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-6.8",
+      "cis_id": "6.8",
+      "guide": "AGENT",
+      "control": 6,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.1",
+      "cis_id": "7.1",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.2",
+      "cis_id": "7.2",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.3",
+      "cis_id": "7.3",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-7.4",
+      "cis_id": "7.4",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.5",
+      "cis_id": "7.5",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.6",
+      "cis_id": "7.6",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-7.7",
+      "cis_id": "7.7",
+      "guide": "AGENT",
+      "control": 7,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.1",
+      "cis_id": "8.1",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.2",
+      "cis_id": "8.2",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.3",
+      "cis_id": "8.3",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-8.4",
+      "cis_id": "8.4",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-8.5",
+      "cis_id": "8.5",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.6",
+      "cis_id": "8.6",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-8.7",
+      "cis_id": "8.7",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.8",
+      "cis_id": "8.8",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.9",
+      "cis_id": "8.9",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.10",
+      "cis_id": "8.10",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.11",
+      "cis_id": "8.11",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-8.12",
+      "cis_id": "8.12",
+      "guide": "AGENT",
+      "control": 8,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.1",
+      "cis_id": "9.1",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.2",
+      "cis_id": "9.2",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.3",
+      "cis_id": "9.3",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.4",
+      "cis_id": "9.4",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.5",
+      "cis_id": "9.5",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.6",
+      "cis_id": "9.6",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-9.7",
+      "cis_id": "9.7",
+      "guide": "AGENT",
+      "control": 9,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-10.1",
+      "cis_id": "10.1",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-10.2",
+      "cis_id": "10.2",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-10.3",
+      "cis_id": "10.3",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-10.4",
+      "cis_id": "10.4",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-10.5",
+      "cis_id": "10.5",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-10.6",
+      "cis_id": "10.6",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-10.7",
+      "cis_id": "10.7",
+      "guide": "AGENT",
+      "control": 10,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-11.1",
+      "cis_id": "11.1",
+      "guide": "AGENT",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-11.2",
+      "cis_id": "11.2",
+      "guide": "AGENT",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-11.3",
+      "cis_id": "11.3",
+      "guide": "AGENT",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-11.4",
+      "cis_id": "11.4",
+      "guide": "AGENT",
+      "control": 11,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-11.5",
+      "cis_id": "11.5",
+      "guide": "AGENT",
+      "control": 11,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.1",
+      "cis_id": "12.1",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.2",
+      "cis_id": "12.2",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.3",
+      "cis_id": "12.3",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.4",
+      "cis_id": "12.4",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.5",
+      "cis_id": "12.5",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-12.6",
+      "cis_id": "12.6",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-12.7",
+      "cis_id": "12.7",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-12.8",
+      "cis_id": "12.8",
+      "guide": "AGENT",
+      "control": 12,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.1",
+      "cis_id": "13.1",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.2",
+      "cis_id": "13.2",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.3",
+      "cis_id": "13.3",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.4",
+      "cis_id": "13.4",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.5",
+      "cis_id": "13.5",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-13.6",
+      "cis_id": "13.6",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.7",
+      "cis_id": "13.7",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.8",
+      "cis_id": "13.8",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.9",
+      "cis_id": "13.9",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-13.10",
+      "cis_id": "13.10",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-13.11",
+      "cis_id": "13.11",
+      "guide": "AGENT",
+      "control": 13,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.1",
+      "cis_id": "14.1",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.2",
+      "cis_id": "14.2",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.3",
+      "cis_id": "14.3",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.4",
+      "cis_id": "14.4",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.5",
+      "cis_id": "14.5",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.6",
+      "cis_id": "14.6",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.7",
+      "cis_id": "14.7",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.8",
+      "cis_id": "14.8",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-14.9",
+      "cis_id": "14.9",
+      "guide": "AGENT",
+      "control": 14,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.1",
+      "cis_id": "15.1",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.2",
+      "cis_id": "15.2",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.3",
+      "cis_id": "15.3",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.4",
+      "cis_id": "15.4",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.5",
+      "cis_id": "15.5",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.6",
+      "cis_id": "15.6",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-15.7",
+      "cis_id": "15.7",
+      "guide": "AGENT",
+      "control": 15,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.1",
+      "cis_id": "16.1",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.2",
+      "cis_id": "16.2",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.3",
+      "cis_id": "16.3",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.4",
+      "cis_id": "16.4",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.5",
+      "cis_id": "16.5",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.6",
+      "cis_id": "16.6",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.7",
+      "cis_id": "16.7",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-16.8",
+      "cis_id": "16.8",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-16.9",
+      "cis_id": "16.9",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.10",
+      "cis_id": "16.10",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.11",
+      "cis_id": "16.11",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.12",
+      "cis_id": "16.12",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.13",
+      "cis_id": "16.13",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-16.14",
+      "cis_id": "16.14",
+      "guide": "AGENT",
+      "control": 16,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.1",
+      "cis_id": "17.1",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.2",
+      "cis_id": "17.2",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.3",
+      "cis_id": "17.3",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG1",
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.4",
+      "cis_id": "17.4",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.5",
+      "cis_id": "17.5",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.6",
+      "cis_id": "17.6",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-17.7",
+      "cis_id": "17.7",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": false
+    },
+    {
+      "id": "AGENT-17.8",
+      "cis_id": "17.8",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-17.9",
+      "cis_id": "17.9",
+      "guide": "AGENT",
+      "control": 17,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-18.1",
+      "cis_id": "18.1",
+      "guide": "AGENT",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-18.2",
+      "cis_id": "18.2",
+      "guide": "AGENT",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-18.3",
+      "cis_id": "18.3",
+      "guide": "AGENT",
+      "control": 18,
+      "ig": [
+        "IG2",
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-18.4",
+      "cis_id": "18.4",
+      "guide": "AGENT",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    },
+    {
+      "id": "AGENT-18.5",
+      "cis_id": "18.5",
+      "guide": "AGENT",
+      "control": 18,
+      "ig": [
+        "IG3"
+      ],
+      "has_ai_guidance": true
+    }
+  ]
+}

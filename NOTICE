@@ -1,0 +1,20 @@
+security-maturity-tool
+Copyright 2026 the security-maturity-tool contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE). That licence covers this project's own code, prompts,
+rules and documentation. Third-party material it uses keeps its own terms:
+
+- NIST Cybersecurity Framework 2.0 and its informative references (data/csf/source, data/csf/csf2_core.json and the
+  crosswalks), and the NIST AI RMF 1.0 Playbook (parsed into data/ai/ai_rmf_core.json): works of the US National
+  Institute of Standards and Technology.
+- CSET (Cyber Security Evaluation Tool, https://github.com/cisagov/cset), by the US Cybersecurity and Infrastructure
+  Security Agency: the CSF question text in data/csf/banks comes from CSET's question sets, used under CSET's own
+  licence.
+- CIS Controls v8.1 and the CIS AI, MCP and AI Agents companion guides (Center for Internet Security), licensed
+  CC BY-NC-ND 4.0. This repository does not include their text: data/ai/cis_ai_safeguard_ids.json holds only the
+  safeguard identifiers, control numbers and names, and Implementation Groups. To build or rebuild the AI RMF banks you
+  download the guides yourself (data/ai/source/README.md); the parsed text stays on your machine. CIS Controls is a
+  trademark of the Center for Internet Security.
+
+The question banks, mapping, evidence prompts and notes in data/ were drafted by AI agents and reviewed by people, as
+recorded in the audit logs; they are not endorsed by NIST, CISA or CIS.

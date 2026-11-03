@@ -1,0 +1,1614 @@
+{
+  "questions": {
+    "172": {
+      "fit": {
+        "GV.RM-01": {
+          "verdict": "accept",
+          "reason": "Board-level accountability for the security program evidences stakeholder-agreed risk management direction; closest of the four mappings."
+        },
+        "GV.RM-03": {
+          "verdict": "reject",
+          "reason": "About management accountability, not inclusion of cyber risk in enterprise risk management."
+        },
+        "GV.RM-06": {
+          "verdict": "reject",
+          "reason": "Does not test a standardized risk calculation or prioritization method."
+        },
+        "GV.RR-03": {
+          "verdict": "reject",
+          "reason": "Asks who is accountable, not whether resources are allocated."
+        }
+      },
+      "text_hash": "9fd9ea5ed9",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent",
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ]
+    },
+    "200": {
+      "fit": {
+        "GV.PO-01": {
+          "verdict": "accept",
+          "reason": "Board-approved security policies directly evidence an established policy."
+        },
+        "GV.PO-02": {
+          "verdict": "reject",
+          "reason": "Asks whether policies exist and are approved, not whether they are reviewed, updated and enforced."
+        },
+        "PR.DS-01": {
+          "verdict": "reject",
+          "reason": "Generic policy question; says nothing about protecting data at rest."
+        },
+        "PR.PS-01": {
+          "verdict": "reject",
+          "reason": "Generic policy question; says nothing about configuration management."
+        }
+      },
+      "text_hash": "368e75e5a8",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent",
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ]
+    },
+    "364": {
+      "fit": {
+        "PR.AA-05": {
+          "verdict": "accept",
+          "reason": "Controlled and monitored access to change system configurations is an access permission control."
+        },
+        "ID.AM-08": {
+          "verdict": "reject",
+          "reason": "Not about managing assets through their life cycle."
+        },
+        "PR.AA-01": {
+          "verdict": "reject",
+          "reason": "Not about issuing or managing identities and credentials."
+        },
+        "PR.PS-02": {
+          "verdict": "reject",
+          "reason": "Not about maintaining, replacing or removing software."
+        }
+      },
+      "text_hash": "f72b61eb13",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent",
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ]
+    },
+    "403": {
+      "fit": {
+        "PR.AA-03": {
+          "verdict": "accept",
+          "reason": "MFA for remote access is user authentication."
+        },
+        "PR.DS-02": {
+          "verdict": "accept",
+          "reason": "Encrypted connections protect data in transit."
+        },
+        "PR.IR-01": {
+          "verdict": "accept",
+          "reason": "Remote access controls protect networks from unauthorized logical access."
+        },
+        "PR.AA-05": {
+          "verdict": "reject",
+          "reason": "About how remote users authenticate, not how permissions are defined and enforced."
+        },
+        "PR.DS-01": {
+          "verdict": "reject",
+          "reason": "Nothing about data at rest."
+        },
+        "PR.DS-10": {
+          "verdict": "reject",
+          "reason": "Nothing about data in use."
+        }
+      },
+      "text_hash": "b570e1bfab",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent",
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ]
+    },
+    "495": {
+      "fit": {
+        "DE.CM-01": {
+          "verdict": "accept",
+          "reason": "Monitoring for unauthorized connections is network monitoring."
+        },
+        "DE.CM-03": {
+          "verdict": "accept",
+          "reason": "Monitoring for unauthorized users is personnel activity monitoring."
+        },
+        "DE.CM-09": {
+          "verdict": "accept",
+          "reason": "Monitoring for unauthorized devices and software covers computing hardware and software."
+        },
+        "DE.CM-06": {
+          "verdict": "reject",
+          "reason": "Nothing about external service providers."
+        }
+      },
+      "text_hash": "e35f6233dd",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent",
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ]
+    },
+    "8503": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Are all environments used in software development (development, build, test and distribution) logically separated from each other, for example through network segmentation and access controls? Which environments are covered, which are not, and who owns these controls?",
+      "text_hash": "e4e07a0c01",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8504": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Do all software development environments and tooling have logging and monitoring in place, including for the trust relationships used for authorization and access? How often is this reviewed, and who owns the review?",
+      "fit": {
+        "DE.CM-03": {
+          "verdict": "accept",
+          "reason": "Monitoring technology usage in development environments."
+        },
+        "DE.CM-09": {
+          "verdict": "accept",
+          "reason": "Monitoring of development environments and tooling."
+        },
+        "PR.PS-04": {
+          "verdict": "accept",
+          "reason": "Log records generated and available for monitoring."
+        },
+        "DE.CM-06": {
+          "verdict": "reject",
+          "reason": "Nothing about external service providers."
+        }
+      },
+      "text_hash": "452a54bcb7",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8505": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Is MFA, ideally phishing-resistant, required to access all software development environments? Which environments or user groups are not covered, and who owns this control?",
+      "fit": {
+        "PR.AA-03": {
+          "verdict": "accept",
+          "reason": "MFA is user authentication."
+        },
+        "PR.AA-01": {
+          "verdict": "reject",
+          "reason": "Not about managing identities and credentials."
+        },
+        "PR.AA-04": {
+          "verdict": "reject",
+          "reason": "Not about identity assertions."
+        },
+        "PR.AA-05": {
+          "verdict": "reject",
+          "reason": "Not about defining access permissions."
+        }
+      },
+      "text_hash": "316b7b6dd2",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8506": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Does the organisation have documented processes, policies and procedures for managing the risks of software products used across its development environments, covering maintenance, replacement, removal, and checks of authenticity and integrity before use? Who owns them, and how is compliance evidenced?",
+      "fit": {
+        "ID.AM-08": {
+          "verdict": "accept",
+          "reason": "Software managed through its life cycle."
+        },
+        "ID.RA-09": {
+          "verdict": "accept",
+          "reason": "Authenticity and integrity of software assessed before use."
+        },
+        "PR.PS-02": {
+          "verdict": "accept",
+          "reason": "Software maintained, replaced and removed per policy."
+        },
+        "PR.PS-05": {
+          "verdict": "reject",
+          "reason": "About preventing unauthorized software, which the practice does not require."
+        }
+      },
+      "text_hash": "23d4cb256a",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8507": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "How are credentials and sensitive data used in software development environments stored and transmitted? Are any kept in source code or in plaintext, how are SSH keys stored and rotated, and who owns this?",
+      "fit": {
+        "PR.DS-01": {
+          "verdict": "accept",
+          "reason": "Encrypted storage of credentials protects data at rest."
+        },
+        "PR.DS-02": {
+          "verdict": "accept",
+          "reason": "Secure transmission of credentials protects data in transit."
+        },
+        "ID.AM-08": {
+          "verdict": "reject",
+          "reason": "Not about asset life cycle."
+        },
+        "PR.DS-10": {
+          "verdict": "reject",
+          "reason": "Not about data in use."
+        }
+      },
+      "text_hash": "e2ae9e4108",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8508": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Does the organisation monitor its environments for indicators of compromise, and have an incident response playbook with criteria for declaring incidents, defined roles and stakeholder notification? Is there a designated incident response team that runs table-top exercises, and how often?",
+      "fit": {
+        "DE.CM-01": {
+          "verdict": "accept",
+          "reason": "Monitoring networks for indicators of compromise."
+        },
+        "DE.CM-09": {
+          "verdict": "accept",
+          "reason": "Monitoring hardware and software for indicators of compromise."
+        },
+        "DE.CM-03": {
+          "verdict": "reject",
+          "reason": "Practice is about environment monitoring, not personnel activity."
+        },
+        "DE.CM-06": {
+          "verdict": "reject",
+          "reason": "Nothing about external service providers."
+        }
+      },
+      "text_hash": "9f6f36179f",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8509": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Is there a software supply chain risk management program built into the software development lifecycle, including code testing and audits of supply chain practices? Who owns it, and how are the activities documented?",
+      "fit": {
+        "GV.SC-01": {
+          "verdict": "accept",
+          "reason": "A supply chain risk management program is the practice itself."
+        },
+        "GV.SC-07": {
+          "verdict": "accept",
+          "reason": "Code testing and audits assess and monitor supplier-related risk."
+        },
+        "GV.SC-09": {
+          "verdict": "accept",
+          "reason": "Supply chain practices integrated into the lifecycle."
+        },
+        "GV.SC-02": {
+          "verdict": "reject",
+          "reason": "About roles and responsibilities."
+        },
+        "GV.SC-03": {
+          "verdict": "reject",
+          "reason": "About enterprise risk management integration, not the SDLC."
+        },
+        "GV.SC-04": {
+          "verdict": "reject",
+          "reason": "About knowing and prioritizing suppliers."
+        },
+        "GV.SC-05": {
+          "verdict": "reject",
+          "reason": "About contractual requirements."
+        },
+        "GV.SC-06": {
+          "verdict": "reject",
+          "reason": "About pre-contract due diligence."
+        },
+        "GV.SC-08": {
+          "verdict": "reject",
+          "reason": "About incident planning with suppliers."
+        },
+        "GV.SC-10": {
+          "verdict": "reject",
+          "reason": "About post-contract activities."
+        },
+        "ID.AM-02": {
+          "verdict": "reject",
+          "reason": "About software inventories."
+        }
+      },
+      "text_hash": "61afdb10f3",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8510": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Does the organisation develop a Software Bill of Materials (SBOM) for its products and provide it to customers with each product? Who owns this?",
+      "text_hash": "b9f7fbfef5",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8511": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Is source code inspected for vulnerabilities with automated tools or comparable processes (for example SAST, DAST and software composition analysis), and are known vulnerabilities mitigated before any release or update? Which products or pipelines are covered, and who owns this?",
+      "fit": {
+        "PR.PS-06": {
+          "verdict": "accept",
+          "reason": "Secure development practices integrated and monitored."
+        },
+        "ID.AM-02": {
+          "verdict": "reject",
+          "reason": "About inventories."
+        },
+        "ID.AM-08": {
+          "verdict": "reject",
+          "reason": "About life cycle management."
+        },
+        "ID.RA-09": {
+          "verdict": "reject",
+          "reason": "About acquisition-time assessment."
+        },
+        "PR.PS-02": {
+          "verdict": "reject",
+          "reason": "About maintaining software, not testing it."
+        }
+      },
+      "text_hash": "a5d8b65917",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8512": {
+      "domains": [
+        "all"
+      ],
+      "reason": "General software-development security practice; any organisation that develops software can answer it.",
+      "rewrite": "Is there a documented process or policy that governs what happens when a security vulnerability is found before a product release, and is it followed? Who owns it, and how is it evidenced?",
+      "fit": {
+        "ID.RA-05": {
+          "verdict": "accept",
+          "reason": "Using vulnerabilities to prioritise risk responses before release."
+        },
+        "ID.AM-08": {
+          "verdict": "reject",
+          "reason": "Not about asset life cycle."
+        },
+        "ID.RA-01": {
+          "verdict": "reject",
+          "reason": "About identifying vulnerabilities, not acting on them."
+        },
+        "ID.RA-04": {
+          "verdict": "reject",
+          "reason": "About impact and likelihood analysis."
+        }
+      },
+      "text_hash": "b94c4f27fd",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8513": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Has the organisation published a vulnerability disclosure policy for its products that authorises good-faith testing, provides a clear reporting channel and allows coordinated public disclosure? How are disclosed vulnerabilities addressed in a timely way?",
+      "fit": {
+        "ID.RA-08": {
+          "verdict": "accept",
+          "reason": "A vulnerability disclosure policy is a process for receiving and responding to disclosures."
+        },
+        "ID.RA-01": {
+          "verdict": "reject",
+          "reason": "About finding vulnerabilities internally."
+        },
+        "ID.RA-04": {
+          "verdict": "reject",
+          "reason": "About impact analysis."
+        },
+        "ID.RA-05": {
+          "verdict": "reject",
+          "reason": "About risk prioritisation."
+        }
+      },
+      "text_hash": "fba72a222f",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8514": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "What does the organisation do to increase the use of MFA among users and administrators of its products, for example enabling it by default or supporting standards-based single sign-on? Who owns this?",
+      "text_hash": "1d395e3986",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8515": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Do the organisation's software products ship with default passwords? If not, what approach replaces them, for example unique initial passwords per instance or a required password change at installation?",
+      "text_hash": "fd78653c09",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8516": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "What approaches does the organisation take to reduce entire classes of vulnerabilities in its software, for example parameterised queries, memory-safe languages or web template frameworks? Who owns this?",
+      "text_hash": "9a3de4935e",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8517": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Does the organisation provide security patches to customers in a timely manner and on a widespread basis? What is the target timeframe, and how is delivery evidenced?",
+      "text_hash": "edc6cec503",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8518": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Does the organisation notify customers, and confirm receipt, when products are nearing end of life and security patches will no longer be provided? Who owns this process?",
+      "text_hash": "8e7ce933c3",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8519": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Does the organisation include accurate CWE and CPE fields in every CVE record it publishes for its products, and issue CVEs in a timely manner for critical or high impact vulnerabilities that need customer action or are being actively exploited? Who owns this?",
+      "text_hash": "dfddbb66b1",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "8520": {
+      "domains": [
+        "saas_cloud",
+        "manufacturing_ot"
+      ],
+      "reason": "Applies to organisations that ship software products to customers, not to every organisation.",
+      "rewrite": "Do all of the organisation's products, to the extent possible, have logging capabilities that let customers gather evidence of intrusions? Which products do not, and who owns closing those gaps?",
+      "text_hash": "82673d2b3a",
+      "judged_on": "2026-10-13",
+      "decided_by": "agent"
+    },
+    "174": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "a916d94fdc",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "177": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "3cd1e42abb",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "178": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "40ea790f38",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "181": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "15afacaaf4",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "183": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "95504ea387",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "185": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "3d388a793e",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "190": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "ff4fe7abc4",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "199": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "9f7cf9d2e2",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "203": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "93919fb511",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "204": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "c43f388d5b",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "205": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "9ea2481cb7",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "209": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "98d2d11b14",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "214": {
+      "reason": "Names the institution's role as critical infrastructure in the financial services industry, which only a financial organisation can answer.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "90c0bd7f48",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "215": {
+      "reason": "Assumes the organisation is part of critical infrastructure, which fits regulated critical-infrastructure sectors rather than any organisation.",
+      "domains": [
+        "finance",
+        "healthcare",
+        "manufacturing_ot"
+      ],
+      "text_hash": "841204ec67",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "217": {
+      "reason": "Asks about the organisation's role relative to other critical infrastructures, which presumes it is a critical-infrastructure operator.",
+      "domains": [
+        "finance",
+        "healthcare",
+        "manufacturing_ot"
+      ],
+      "text_hash": "f2d83b282e",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "218": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "7532efbcd8",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "219": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "eccaf542e5",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "221": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "6fd4c087d1",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "223": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0b833dc02d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "224": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "10fae81b0e",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "236": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "20bc1fca2e",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "246": {
+      "reason": "Measures incident impact on the institution's capital, a banking/regulatory-capital concept.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "5a88432b2c",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "250": {
+      "reason": "A GLBA-style risk assessment focused on safeguarding customer information and customer information systems.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "9823e27853",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "253": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b6c3584758",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "254": {
+      "reason": "Presupposes a GLBA customer-information risk assessment that has since been expanded, which is finance-specific framing.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "6d08f8fe5d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "279": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "644cf04868",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "283": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "a9082d0452",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "284": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "436d5596d7",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "290": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "48b4fa8c1f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "292": {
+      "reason": "Customer cybersecurity awareness materials are an FFIEC expectation for banks serving retail customers.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "80040e6f56",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "294": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0a92652877",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "295": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "23385bbbc6",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "299": {
+      "reason": "Refers to retail customers and commercial clients of a financial institution.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "0d8b38f179",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "304": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "8ecd5ef96d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "313": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4fd3aea0eb",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "314": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "420527d25d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "325": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "8cb76252a5",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "326": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "e150585d5a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "327": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "c4adad53c1",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "330": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d0a26be692",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "332": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b7380df1fe",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "343": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "91016ddf3a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "347": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "c8753c7dee",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "349": {
+      "reason": "Explicitly about sharing threat information with other financial sector organisations.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "4c6ebdc51a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "358": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0726e52383",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "362": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4989cfe107",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "370": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "8ad4d2e0b5",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "371": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "8324023d20",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "376": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "46c3c3f570",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "377": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "6fe8441151",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "389": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "524185482a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "390": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "89b7202dd2",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "391": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "5b6e17c080",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "392": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "2eabecf888",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "393": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "37d4bdee97",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "394": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "638704a1ed",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "395": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "e4e60ed34f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "398": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "864105c98c",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "399": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "ec14f46411",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "401": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "9fa3c55edf",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "402": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "53add28099",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "404": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "2df4aab7c5",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "406": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4fb6b66e53",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "412": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "f81a87542d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "420": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "605cd33b27",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "427": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "e30661faa1",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "432": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "969bf68957",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "434": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "5bda739207",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "435": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "2ca77a84fc",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "436": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "8e054d8a5f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "441": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b788abab73",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "445": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "e13375ee7b",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "448": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "a70d76f7ce",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "454": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "7dd762dee1",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "455": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d9e1cc9d28",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "462": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d4b80f5b70",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "466": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "c600078e41",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "471": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b4e93c6e3a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "488": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "9c4d285589",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "493": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "1458c9751a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "494": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "f4e8ae06f8",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "496": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "dccd1068b3",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "498": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "be4d0ea51f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "499": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "fba39ef42d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "500": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "20ea450057",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "523": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4dbb3e450a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "528": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "5c9920155f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "529": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "220bff4473",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "532": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "e6e45749f0",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "534": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "ab41197c78",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "535": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b8b677994f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "540": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "2e19bd77cd",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "549": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d24cd6e383",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "559": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4bc6092754",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "560": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "cdce8bb541",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "563": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "4d93412c11",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "579": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "7d67b0c295",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "588": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "dc3288c7d7",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "597": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d351ed50f3",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "601": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "a97710bda2",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "602": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "5cd6e2337d",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "605": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "cb4e71ddbd",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "606": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d1a9c56ea6",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "611": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "37f182ac75",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "623": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0c38518668",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "625": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "1f4e124a23",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "626": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "381cf695cf",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "627": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "abc1287fce",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "629": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "d9ae08c7eb",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "632": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "723c9eb653",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "635": {
+      "reason": "Containment framed around preventing unauthorized use of customer information, the GLBA term for financial customer data.",
+      "domains": [
+        "finance"
+      ],
+      "text_hash": "e47d19fabd",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "641": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0f2d9cf1b3",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "643": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "36db7dde7a",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "644": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "332d008da0",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "646": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "948d853c52",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "651": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "200a839736",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "653": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "bc6f1d392f",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "655": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "b3ae91d188",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "656": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "0bf8e9eba4",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    },
+    "662": {
+      "reason": "A general security practice; 'institution', 'board' or 'management' read as any organisation, so any sector can answer it as written.",
+      "domains": [
+        "all"
+      ],
+      "text_hash": "ffc66493c9",
+      "judged_on": "2026-11-02",
+      "decided_by": "agent"
+    }
+  }
+}

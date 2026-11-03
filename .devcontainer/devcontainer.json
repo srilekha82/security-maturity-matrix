@@ -1,0 +1,14 @@
+{
+  "name": "security-maturity-tool",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && ([ -d ~/workstuff/cset ] || (mkdir -p ~/workstuff && git clone --filter=blob:none --sparse https://github.com/cisagov/cset.git ~/workstuff/cset && git -C ~/workstuff/cset sparse-checkout set CSETWebApi/CSETWeb_Api/CSETWebCore.UpgradeLibrary/VersionUpgrader/SQL))",
+  "customizations": {
+    "vscode": {
+      "settings": {"python.defaultInterpreterPath": ".venv/bin/python"},
+      "extensions": ["ms-python.python"]
+    }
+  }
+}

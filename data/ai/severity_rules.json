@@ -1,0 +1,21 @@
+{
+  "description": "Priority (High / Medium / Low) of each AI RMF subcategory in the AI RMF profile XLS (its Priority column), from the AI system inventory (GOVERN 1.6, question_rules.json ai_system_inventory). Applied by scripts/ai_priority.py for the Stage 2 writer; it never changes which questions are asked. Decided 2026-11-02 (AI_RMF_Mapping_Sheet_Design.md section 4).",
+  "levels": ["Low", "Medium", "High"],
+  "band_levels": {
+    "Financial loss if it gets things wrong": ["Low", "Medium", "High"],
+    "Reputational damage if it gets things wrong": ["Low", "Medium", "High"],
+    "Possible harm to people": ["Low", "High"]
+  },
+  "band_levels_note": "One level per band, in the order of the bands in question_rules.json ai_system_inventory.criticality. A system's criticality is the highest level among its answers.",
+  "blank": "High",
+  "blank_note": "A band left blank, a client AI area no inventory system is marked with, or no inventory at all counts as High: not being able to answer is itself a gap.",
+  "domain_floor": {
+    "domains": ["healthcare", "manufacturing_ot"],
+    "impact": "people",
+    "subcategories": ["MEASURE 2.6"],
+    "level": "High",
+    "note": "Loss of life is possible in these domains: a subcategory reached through a row with a people impact, and MEASURE 2.6 (safety), are always High."
+  },
+  "foundation": "A foundation subcategory (all of GOVERN and mapping_rules.json foundation.subcategories) is organisation-wide: the highest criticality of any system.",
+  "areas": "Any other subcategory: the highest criticality among the systems marked with an AI area whose mapping row (or a row that folds it) reaches the subcategory. Subcategories not in the client's questionnaire get no priority."
+}
