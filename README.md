@@ -192,7 +192,7 @@ One folder per engagement. It holds client data, so keep it out of any shared re
 
 ### Tests
 
-`tests/fixtures/` has `sample_soa.xlsx` and `ai_rmf_profile_template.xlsx` (the schema the future XLS writer must match: headers, the AI RMF ids and outcomes, no content). `.venv/bin/python -m unittest discover -s tests` checks the AI RMF parser output and scripts, the intake, the shared options and the workbook writer (stores redirected to a temp dir).
+`tests/fixtures/` has `sample_soa.xlsx`. `templates/` has the two empty profile XLS files that Stage 2 fills (a copy per run, in the run folder, never committed) and the Stage 3 skills read: `csf_org_profile_template.xlsx` (the NIST CSF 2.0 Organizational Profile template: sheet "Current and Target Profile", 19 columns, the CSF ids and outcomes, NIST's column descriptions) and `ai_rmf_profile_template.xlsx` (sheet "AI RMF Profile", 11 columns, the AI RMF ids and outcomes). Both carry only headers, ids and outcome text; keep their cell colours (the framework colours the reports and the deck also use). `.venv/bin/python -m unittest discover -s tests` checks the AI RMF parser output and scripts, the intake, the shared options and the workbook writer (stores redirected to a temp dir).
 
 ## Status
 

@@ -14,8 +14,13 @@ done (below). Stage 3 is in: the report skills in `.claude/skills/` (`nist-csf-a
 `nist-assessment-hub`; roadmap derived from the gaps, CIS as IDs only) and the explainer deck in `docs/deck/`.
 
 **Next:**
-1. Stage 2 output templates: the user adds the empty profile XLS templates (CSF 2.0 Organizational Profile, AI RMF
-   profile) to the repo; a run fills copies of them in its own run folder (never committed).
+1. ~~Stage 2 output templates~~ done 2026-11-03: `templates/csf_org_profile_template.xlsx` (NIST CSF 2.0
+   Organizational Profile, emptied from the user's file: columns C to S cleared, comments and custom properties
+   removed, colours kept) and `templates/ai_rmf_profile_template.xlsx` (moved from `tests/fixtures/`). A run fills
+   copies in its own run folder (never committed). The skills now read both as filled in practice: headers and
+   values trimmed, blank "Included" = no (NIST), `Tier2` / `NA` / `Same as current` handled, Target Priority shown
+   but the roadmap uses Current Priority. The XLS writer writes one form only: `Yes`/`No`, `Tier N`, `High`/`Medium`/
+   `Low`, maturity as an integer.
 2. Stage 2: the answer session and the XLS writer (Priority column from `ai_priority.subcategory_priorities`; decide
    how the AI RMF score rolls up when several areas ask one subcategory).
 3. Testing after Stage 2: a fictional-company sample (filled XLS -> the three skills -> HTML), hosted in

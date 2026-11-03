@@ -110,8 +110,8 @@ Loop: max 2–3 cycles. If still FAIL → human_review_required: true
 ```
 
 **Final outputs:**
-- CSF profile XLS — answers mapped to maturity scores; schema = NIST CSF 2.0 Organizational Profile Template (`NIST/CSF 2.0 Organizational Profile Template-final.xlsx`, sheet "Current and Target Profile", 19 columns: outcome ID and description, included, rationale; current priority / status / policies and processes / internal practices / roles / informative references / artifacts and evidence; target priority / tier / policies / practices / roles / informative references; notes; considerations)
-- AI RMF profile XLS — answers mapped to maturity scores; schema = `tests/fixtures/ai_rmf_profile_template.xlsx` format (11 columns: ID, Outcome, Included, Rationale, Priority, Layer, CurrentMaturity, CurrentState, TargetMaturity, TargetState, Evidence)
+- CSF profile XLS — answers mapped to maturity scores; schema = NIST CSF 2.0 Organizational Profile Template (`templates/csf_org_profile_template.xlsx`, sheet "Current and Target Profile", 19 columns: outcome ID and description, included, rationale; current priority / status / policies and processes / internal practices / roles / informative references / artifacts and evidence; target priority / tier / policies / practices / roles / informative references; notes; considerations)
+- AI RMF profile XLS — answers mapped to maturity scores; schema = `templates/ai_rmf_profile_template.xlsx` format (11 columns: ID, Outcome, Included, Rationale, Priority, Layer, CurrentMaturity, CurrentState, TargetMaturity, TargetState, Evidence)
 
 The XLS schema is fixed by what the downstream skills expect. Do not change it without updating the skills.
 

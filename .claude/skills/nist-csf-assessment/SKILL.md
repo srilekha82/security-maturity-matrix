@@ -34,17 +34,21 @@ layout, CSS tokens and JS structure the output must follow.
 
 ### Step 1 — Read the XLS
 
-The XLS is the NIST CSF 2.0 Organizational Profile Template. Sheet: `Current and
-Target Profile`. Columns:
+The XLS is the NIST CSF 2.0 Organizational Profile Template (empty copy:
+`templates/csf_org_profile_template.xlsx`). Sheet: `Current and Target Profile`.
+Match headers after trimming spaces and line breaks and collapsing runs of whitespace
+(filled-in files often carry `"Medium "` or a header with a stray space); trim every
+cell value the same way. Columns:
 
 | Column | Use |
 |--------|-----|
 | `CSF Outcome (Function, Category, or Subcategory)` | Row ID — skip if not matching `^[A-Z]{2}\.[A-Z]{2}-\d+` |
-| `Included in Profile?` | Skip rows where value is not blank and not "yes" |
+| `Included in Profile?` | Keep only rows whose value is "yes" (any case). Blank counts as "no", as NIST's column description says |
 | `CSF Outcome Description` | `desc` |
 | `Rationale` | `rationale` |
-| `Current Priority` | `priority` (High / Medium / Low; blank = Low) |
+| `Current Priority` | `priority` (High / Medium / Low; blank or `NA` = Low). The roadmap uses this column |
 | `Current Status` | `current_n` — normalise to integer tier (map below) |
+| `Target Priority` | `target_priority` — shown in the popup only; not used for the roadmap |
 | `Target CSF Tier` | `target_n` — normalise to integer tier |
 | `Current Policies, Processes, and Procedures` | `current_ppp` |
 | `Current Internal Practices` | `current_practices` |
@@ -58,8 +62,12 @@ Target Profile`. Columns:
 | `Notes` | `notes` |
 | `Considerations` | `considerations` (in this pipeline it also carries the AI impact notes for the subcategory) |
 
-**Tier normalisation:** `Tier 1` / `T1` / `1` → 1, `Tier 2` / `T2` / `2` → 2, etc.
-A row with no current or target tier is shown but not counted as a gap.
+**Tier normalisation:** `Tier 1` / `Tier1` / `T1` / `1` → 1, `Tier 2` / `Tier2` / `T2` /
+`2` → 2, etc. (case-insensitive, spaces ignored). `NA`, `N/A` or blank → no tier (not
+assessed). A target of `Same as current` → the row's current tier. Any other value →
+no tier, and list the row and its value to the user after generating. A row with no
+current or target tier is shown but not counted as a gap and is left out of the
+averages.
 
 **Function from ID prefix:** `GV` → Govern, `ID` → Identify, `PR` → Protect,
 `DE` → Detect, `RS` → Respond, `RC` → Recover

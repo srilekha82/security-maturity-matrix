@@ -6,7 +6,7 @@ description: "Generates or updates a NIST AI RMF 1.0 Assessment HTML dashboard f
 # NIST AI RMF 1.0 Assessment — HTML Generator
 
 Produces one self-contained `AI_RMF_Assessment.html` from an AI RMF profile XLS (any
-file name; the layout is `tests/fixtures/ai_rmf_profile_template.xlsx`). The output is
+file name; the layout is `templates/ai_rmf_profile_template.xlsx`). The output is
 a 5-tab interactive report: Summary, Maturity Assessment, Gap Analysis & Roadmap,
 Assessment Detail, and CIS Reference. Everything shown comes from the XLS and from this
 repository's accepted mapping; nothing is hard-coded per organisation.
@@ -44,19 +44,23 @@ Manage:  #2B4F8C
 
 ### Step 1 — Read the XLS
 
-Sheet: `AI RMF Profile`
+Sheet: `AI RMF Profile` (empty copy: `templates/ai_rmf_profile_template.xlsx`). Match
+headers after trimming spaces and line breaks and collapsing runs of whitespace: the
+template's own headers are `"Included in \nProfile"` and `" Priority"`, and
+`Applicability Layer (Developer / User / Shared)` is matched by its start. Trim every
+cell value the same way.
 
 | Column | Field |
 |--------|-------|
 | `AI RMF (Function, Category,SubCategory)` | Row ID — keep subcategory rows only (e.g. "GOVERN 1.1"); skip function and category header rows |
 | `Outcome Description` | `desc` |
-| `Included in Profile` | Skip rows where the value is "No" or blank |
+| `Included in Profile` | Keep only rows whose value is "Yes" (any case); blank or "No" = not included |
 | `Rationale` | `rationale` |
-| `Priority` | `priority` (High / Medium / Low; blank = Low) |
+| `Priority` | `priority` (High / Medium / Low; blank or `NA` = Low) |
 | `Applicability Layer` | `layer` (Developer / User / Shared) |
-| `Current Maturity (1-4)` | `current_n` — integer 1–4 |
+| `Current Maturity (1-4)` | `current_n` — integer 1–4 (a number or text such as `2` / `L2`; `NA` or blank = not assessed: shown, not a gap, left out of averages) |
 | `Current State` | `current_state` |
-| `Target Maturity (1-4)` | `target_n` — integer 1–4 |
+| `Target Maturity (1-4)` | `target_n` — integer 1–4, read like `current_n`; `Same as current` → `current_n`. Any other value → not assessed, and list the row to the user |
 | `Target State` | `target_state` |
 | `Current Evidence / Controls in Place` | `evidence` |
 
