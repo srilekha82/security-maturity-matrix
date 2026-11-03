@@ -32,7 +32,8 @@ Question banks  →  Stage 1: Questionnaire  →  Stage 2: Answers        →  S
 | Change how an agent judges | The file in `prompts/` (see the table below). Editing the AI generator or evaluator prompt makes the accepted pilot stale. |
 | See what happened in a run | `runs/<Org>_<date>/audit.jsonl` (timeline) and `judgement_log/` (what each agent was shown and answered). |
 | Change the code or add a stage | Read `DESIGN_RULES.md` first, then run the tests (`.venv/bin/python -m unittest discover -s tests`). |
-| Get the maturity XLS or the HTML report | The XLS writer is not built yet. HTML comes from separate skills (`nist-assessment`, `ai-rmf-assessment`; not part of this repo), one profile XLS each. |
+| Get the maturity XLS or the HTML report | The XLS writer is not built yet. The reports come from the Stage 3 skills in `.claude/skills/` (`nist-csf-assessment`, `nist-ai-rmf-assessment`, `nist-assessment-hub`), one profile XLS each; save them outside the repo. |
+| Explain the frameworks to an audience | `docs/deck/Cybersecurity_and_AI_Capability.pptx` (see `docs/deck/README.md`). |
 
 ## How it works
 
@@ -65,7 +66,7 @@ Question banks  →  Stage 1: Questionnaire  →  Stage 2: Answers        →  S
 
 The intake is `scripts/intake.py`: it prints the numbered menus (from `data/common/intake_options.json`), turns the typed numbers into values, and writes `intake.json` (org, domain, certs) and `ai_usage.json` in the run folder. Every later step reads those files.
 
-**Not built yet:** the agentic answer session (`gen-eval-loop`), the Stage 2 XLS writer (including writing the AI impact notes into the CSF profile's Considerations column), and HTML generation as a command (today it is the `nist-assessment` and `ai-rmf-assessment` skills, not part of this repo). The AI RMF banks and notes are built by `/build-ai-bank`; they exist only once that has been run.
+**Not built yet:** the agentic answer session (`gen-eval-loop`), the Stage 2 XLS writer (including writing the AI impact notes into the CSF profile's Considerations column), and HTML generation as a command (today it is the Stage 3 skills in `.claude/skills/`). The AI RMF banks and notes are built by `/build-ai-bank`; they exist only once that has been run.
 
 ### Building a bank (`/build-csf-bank`)
 
@@ -226,4 +227,4 @@ One folder per engagement. It holds client data, so keep it out of any shared re
 
 ## Notes
 
-- Related repos: `gen-eval-loop/` (Stage 2 harness), `NIST/` (reference data, profile XLS files, assessment HTMLs).
+- Related: `gen-eval-loop` (a separate Stage 2 harness).

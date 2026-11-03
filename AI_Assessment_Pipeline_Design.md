@@ -121,16 +121,17 @@ The XLS schema is fixed by what the downstream skills expect. Do not change it w
 
 ## Stage 3 — HTML Generation
 
-**Tool:** Claude skills (exist and working)
+**Tool:** Claude skills in `.claude/skills/`
 
 | Track | Skill | Input | Output |
 |-------|-------|-------|--------|
-| CSF | `nist-assessment` (separate skill, not in this repo) | CSF profile XLS | `NIST_Assessment.html` |
-| AI RMF | `ai-rmf-assessment` (separate skill, not in this repo) | AI RMF profile XLS | `AI_RMF_Assessment.html` |
+| CSF | `nist-csf-assessment` | CSF profile XLS | `NIST_CSF_Assessment.html` |
+| AI RMF | `nist-ai-rmf-assessment` | AI RMF profile XLS | `AI_RMF_Assessment.html` |
+| Hub | `nist-assessment-hub` | the two profiles (or reports) | `Assessment_Landing.html` |
 
 Both HTMLs are self-contained (no external dependencies). Both work on OneDrive (event delegation pattern, no inline onclick).
 
-CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer — baked into the skill, not derived from the XLS. They don't change the gap assessment; they prescribe implementation actions to close each gap.
+CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer: for CSF from the profile's informative references, for AI RMF from the accepted mapping (`data/ai/mapping.json`), as safeguard IDs only. The roadmap itself is derived from each organisation's gaps and priorities, never hard-coded. They don't change the gap assessment; they prescribe implementation actions to close each gap.
 
 ---
 
@@ -141,9 +142,9 @@ CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer
 | CSF question bank (CSET) | ✅ Exists |
 | Questionnaire generation tool (security-maturity-tool) | ✅ Exists and working |
 | Gen-eval loop harness | ✅ Exists (generic, needs scenario config) |
-| CSF skill + HTML | ✅ Exists and working |
-| AI RMF skill + HTML | ✅ Exists and working |
-| AI RMF mapping and question banks (foundation, areas) | 🟡 Mapping accepted; question tooling built, banks not generated yet |
+| CSF report skill (`nist-csf-assessment`) | ✅ In `.claude/skills/`, roadmap derived from the gaps |
+| AI RMF report skill (`nist-ai-rmf-assessment`) and hub (`nist-assessment-hub`) | ✅ In `.claude/skills/`; not yet run on a Stage 2 profile |
+| AI RMF mapping and question banks (foundation, areas) | ✅ Mapping accepted; both banks built and reviewed |
 | Agentic answer session (gen-eval scenario config + prompts) | ❌ To build |
 | XLS writer (maps filled answers → profile XLS) | ❌ To build |
 
@@ -169,8 +170,7 @@ CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer
 
 | Repo | Purpose |
 |------|---------|
-| `security-maturity-tool/` | Stage 1: questionnaire generation; also hosts the AI RMF bank build |
-| `gen-eval-loop/` | Stage 2 harness (generic) |
-| `NIST/` | Reference data, profile XLS files, assessment HTMLs |
+| `security-maturity-matrix/` | Stage 1 (questionnaire, banks) and Stage 3 (report skills, explainer deck) |
+| `gen-eval-loop/` | Stage 2 harness (generic, separate) |
 
 New scenario for Stage 2 goes in: `gen-eval-loop/examples/csf-questionnaire-fill/`
