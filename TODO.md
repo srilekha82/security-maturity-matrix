@@ -1,4 +1,4 @@
-# TODO (last updated 2026-11-02)
+# TODO (last updated 2026-11-03)
 
 State: the AI RMF model was redesigned (2026-10-16 to 2026-10-22): AI areas (how AI is used and what it is made of) ->
 attack areas -> AI RMF function -> subcategory. `AI_RMF_Mapping_Sheet_Design.md` is the starting point for every
@@ -8,7 +8,25 @@ removed. **Both AI RMF question banks and the CSF AI impact notes are built (202
 `judgement_log/`) is kept.
 
 ## Start here next session
-**Next, in order (updated 2026-11-02 after the second test-client run):**
+**Repository state (2026-11-03):** this is the public open-source repo `srilekha82/security-maturity-matrix`
+(Apache-2.0, `NOTICE` covers NIST, CISA CSET and CIS). The old `security-maturity-tool` repo is kept private. Stage 1 is
+done (below). Stage 3 is in: the report skills in `.claude/skills/` (`nist-csf-assessment`, `nist-ai-rmf-assessment`,
+`nist-assessment-hub`; roadmap derived from the gaps, CIS as IDs only) and the explainer deck in `docs/deck/`.
+
+**Next:**
+1. ~~Stage 2 output templates~~ done 2026-11-03: `templates/csf_org_profile_template.xlsx` (NIST CSF 2.0
+   Organizational Profile, emptied from the user's file: columns C to S cleared, comments and custom properties
+   removed, colours kept) and `templates/ai_rmf_profile_template.xlsx` (moved from `tests/fixtures/`). A run fills
+   copies in its own run folder (never committed). The skills now read both as filled in practice: headers and
+   values trimmed, blank "Included" = no (NIST), `Tier2` / `NA` / `Same as current` handled, Target Priority shown
+   but the roadmap uses Current Priority. The XLS writer writes one form only: `Yes`/`No`, `Tier N`, `High`/`Medium`/
+   `Low`, maturity as an integer.
+2. Stage 2: the answer session and the XLS writer (Priority column from `ai_priority.subcategory_priorities`; decide
+   how the AI RMF score rolls up when several areas ask one subcategory).
+3. Testing after Stage 2: a fictional-company sample (filled XLS -> the three skills -> HTML), hosted in
+   `docs/sample/` via GitHub Pages. Fictional data only, never a client's report.
+
+**Stage 1 history (updated 2026-11-02 after the second test-client run):**
 1. ~~Impact notes~~ done 2026-10-31: `exposure` is optional (written only where the safeguard text supports something
    real for an org with no AI); the 19 flagged notes lost their exposure note, ID.IM-02's model note points to Output,
    PR.PS-03 and RC.CO-04 lost their use layer too and have no note. 46 notes, all pass (29 exposure, 43 use layers).
@@ -67,8 +85,7 @@ removed. **Both AI RMF question banks and the CSF AI impact notes are built (202
    every domain: 115 `all`, 8 finance only, 2 critical-infrastructure sectors. It read "the institution" / "board" as
    wording any organisation can answer (the prompt lists "the institution" as sector wording; the strict reading
    would move 32 more off `all`); the engagement reviewer rewords sector wording for the client (check 8).
-6. Next: Stage 2 (answer session and maturity XLS; it calls `ai_priority.subcategory_priorities` for the Priority
-   column); the parked items below.
+6. Stage 2: see "Next" above; the parked items below.
 - Pilot accepted 2026-10-29 (four rounds; GOVERN 1.2, 1.6, 6.1; MAP 1.4, MAP 3.2, MEASURE 2.7, MEASURE 2.8, MANAGE 3.2).
 - Full run 2026-10-29 to 2026-10-31 (Sonnet generator, Opus evaluator, 9 batches, two rounds each; interrupted once by
   the usage limit and resumed from the work files): foundation 31 subcategories, 84 questions; areas 41, 202 questions.

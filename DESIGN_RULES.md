@@ -1,4 +1,4 @@
-# Design rules for security-maturity-tool
+# Design rules for security-maturity-matrix
 
 Read this when you change the design: add or change a script, prompt, command or data file, or add a track or stage. It is
 not needed to run the flows (`CLAUDE.md` covers that). `README.md` explains the flow and the file layout.

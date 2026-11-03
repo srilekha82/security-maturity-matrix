@@ -9,13 +9,13 @@ End-to-end pipeline that takes org inputs and produces interactive assessment HT
 ## Pipeline Architecture
 
 ```
-Question Bank Build  (subagents in security-maturity-tool — infrequent, runs only when sources change)
+Question Bank Build  (subagents in security-maturity-matrix — infrequent, runs only when sources change)
 ├── CSF      → CSET already exists; freshness check only
 └── AI RMF   → mapping (AI area x subcategory), then two banks (foundation, areas), generated from: AI RMF Playbook + CIS AI companion guides
                gate: skip if Playbook and CIS guides unchanged this quarter
                design: AI_RMF_Mapping_Sheet_Design.md
          ↓
-Stage 1: Questionnaire Generation  (security-maturity-tool)
+Stage 1: Questionnaire Generation  (security-maturity-matrix)
          uses question bank above + org profile + compliance status + AI usage profile
          ↓
 Stage 2: Agentic Answer Session    (gen-eval-loop — runs per org engagement)
@@ -28,7 +28,7 @@ Stage 3: HTML Generation           (Claude skills)
 
 ## Stage 1 — Questionnaire Generation
 
-**Tool:** `security-maturity-tool` (exists and working)
+**Tool:** `security-maturity-matrix` (exists and working)
 
 **Inputs:**
 - Org profile: name, industry/domain, compliance certifications held (ISO 27001, SOC2, PCI DSS)
@@ -110,8 +110,8 @@ Loop: max 2–3 cycles. If still FAIL → human_review_required: true
 ```
 
 **Final outputs:**
-- CSF profile XLS — answers mapped to maturity scores; schema = NIST CSF 2.0 Organizational Profile Template (`NIST/CSF 2.0 Organizational Profile Template-final.xlsx`, sheet "Current and Target Profile", 19 columns: outcome ID and description, included, rationale; current priority / status / policies and processes / internal practices / roles / informative references / artifacts and evidence; target priority / tier / policies / practices / roles / informative references; notes; considerations)
-- AI RMF profile XLS — answers mapped to maturity scores; schema = `tests/fixtures/ai_rmf_profile_template.xlsx` format (11 columns: ID, Outcome, Included, Rationale, Priority, Layer, CurrentMaturity, CurrentState, TargetMaturity, TargetState, Evidence)
+- CSF profile XLS — answers mapped to maturity scores; schema = NIST CSF 2.0 Organizational Profile Template (`templates/csf_org_profile_template.xlsx`, sheet "Current and Target Profile", 19 columns: outcome ID and description, included, rationale; current priority / status / policies and processes / internal practices / roles / informative references / artifacts and evidence; target priority / tier / policies / practices / roles / informative references; notes; considerations)
+- AI RMF profile XLS — answers mapped to maturity scores; schema = `templates/ai_rmf_profile_template.xlsx` format (11 columns: ID, Outcome, Included, Rationale, Priority, Layer, CurrentMaturity, CurrentState, TargetMaturity, TargetState, Evidence)
 
 The XLS schema is fixed by what the downstream skills expect. Do not change it without updating the skills.
 
@@ -121,16 +121,17 @@ The XLS schema is fixed by what the downstream skills expect. Do not change it w
 
 ## Stage 3 — HTML Generation
 
-**Tool:** Claude skills (exist and working)
+**Tool:** Claude skills in `.claude/skills/`
 
 | Track | Skill | Input | Output |
 |-------|-------|-------|--------|
-| CSF | `nist-assessment` (separate skill, not in this repo) | CSF profile XLS | `NIST_Assessment.html` |
-| AI RMF | `ai-rmf-assessment` (separate skill, not in this repo) | AI RMF profile XLS | `AI_RMF_Assessment.html` |
+| CSF | `nist-csf-assessment` | CSF profile XLS | `NIST_CSF_Assessment.html` |
+| AI RMF | `nist-ai-rmf-assessment` | AI RMF profile XLS | `AI_RMF_Assessment.html` |
+| Hub | `nist-assessment-hub` | the two profiles (or reports) | `Assessment_Landing.html` |
 
 Both HTMLs are self-contained (no external dependencies). Both work on OneDrive (event delegation pattern, no inline onclick).
 
-CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer — baked into the skill, not derived from the XLS. They don't change the gap assessment; they prescribe implementation actions to close each gap.
+CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer: for CSF from the profile's informative references, for AI RMF from the accepted mapping (`data/ai/mapping.json`), as safeguard IDs only. The roadmap itself is derived from each organisation's gaps and priorities, never hard-coded. They don't change the gap assessment; they prescribe implementation actions to close each gap.
 
 ---
 
@@ -139,11 +140,11 @@ CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer
 | Component | Status |
 |-----------|--------|
 | CSF question bank (CSET) | ✅ Exists |
-| Questionnaire generation tool (security-maturity-tool) | ✅ Exists and working |
+| Questionnaire generation tool (security-maturity-matrix) | ✅ Exists and working |
 | Gen-eval loop harness | ✅ Exists (generic, needs scenario config) |
-| CSF skill + HTML | ✅ Exists and working |
-| AI RMF skill + HTML | ✅ Exists and working |
-| AI RMF mapping and question banks (foundation, areas) | 🟡 Mapping accepted; question tooling built, banks not generated yet |
+| CSF report skill (`nist-csf-assessment`) | ✅ In `.claude/skills/`, roadmap derived from the gaps |
+| AI RMF report skill (`nist-ai-rmf-assessment`) and hub (`nist-assessment-hub`) | ✅ In `.claude/skills/`; not yet run on a Stage 2 profile |
+| AI RMF mapping and question banks (foundation, areas) | ✅ Mapping accepted; both banks built and reviewed |
 | Agentic answer session (gen-eval scenario config + prompts) | ❌ To build |
 | XLS writer (maps filled answers → profile XLS) | ❌ To build |
 
@@ -169,8 +170,7 @@ CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer
 
 | Repo | Purpose |
 |------|---------|
-| `security-maturity-tool/` | Stage 1: questionnaire generation; also hosts the AI RMF bank build |
-| `gen-eval-loop/` | Stage 2 harness (generic) |
-| `NIST/` | Reference data, profile XLS files, assessment HTMLs |
+| `security-maturity-matrix/` | Stage 1 (questionnaire, banks) and Stage 3 (report skills, explainer deck) |
+| `gen-eval-loop/` | Stage 2 harness (generic, separate) |
 
 New scenario for Stage 2 goes in: `gen-eval-loop/examples/csf-questionnaire-fill/`

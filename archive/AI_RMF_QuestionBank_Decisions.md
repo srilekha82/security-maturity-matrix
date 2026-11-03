@@ -4,7 +4,7 @@ Status: decisions settled Oct 2026; build not started. Read with `README.md`, `A
 
 ## What we are building
 
-A question bank generator for NIST AI RMF 1.0 assessments, analogous to how `security-maturity-tool` uses CSET for CSF 2.0. The output is two frozen JSON files — one for producer orgs, one for consumer orgs — built from the AI RMF Playbook and the three CIS companion guides, and refreshed quarterly. The answers end up in the AI RMF profile XLS (Stage 2).
+A question bank generator for NIST AI RMF 1.0 assessments, analogous to how `security-maturity-matrix` uses CSET for CSF 2.0. The output is two frozen JSON files — one for producer orgs, one for consumer orgs — built from the AI RMF Playbook and the three CIS companion guides, and refreshed quarterly. The answers end up in the AI RMF profile XLS (Stage 2).
 
 ---
 
@@ -215,7 +215,7 @@ In the repo, like `data/csf/source/`, under `data/ai/source/` (copied from the N
 The CIS guides are CC BY-NC-ND 4.0: internal non-commercial use only. If this repo is ever shared, keep the PDFs out of it (or fetch them with a download step).
 
 Other files, outside the repo:
-- `ai_rmf_profile_template.xlsx` — AI RMF profile: 72 subcategories, 11 columns; also the Stage 2 output schema (a copy is in `tests/fixtures/`)
+- `ai_rmf_profile_template.xlsx` — AI RMF profile: 72 subcategories, 11 columns; also the Stage 2 output schema (now `templates/`)
 - `CSF 2.0 Organizational Profile Template-final.xlsx` — the CSF profile (19 columns), the Stage 2 output schema for CSF
 
 `check_freshness.py` today compares dates against `refresh_threshold_days`; the AI RMF gate compares SHA-256 values (stored in `metadata.json`). Extending the script is build Step 4.

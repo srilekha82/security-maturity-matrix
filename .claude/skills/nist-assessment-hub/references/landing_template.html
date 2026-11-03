@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessment Hub — Security &amp; AI Assessments</title>
+<style>
+:root{--ink:#1E293B;--slate:#475569;--accent:#7C3AED;--accent-deep:#4C1D95;--accent-soft:#F5F3FF;--lgray:#F5F7FA;--mgray:#E0E0E0;--radius:12px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#F1F5F9;color:#0F172A;min-height:100vh}
+
+.app-header{background:var(--ink);padding:0 32px;height:56px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:50}
+.logo-mark{display:flex;align-items:center;gap:10px}
+.logo-wordmark{font-size:20px;font-weight:700;color:#fff;letter-spacing:-.3px}
+.logo-tag{font-size:11px;color:rgba(255,255,255,.6);margin-left:4px}
+.header-spacer{flex:1}
+.header-date{font-size:12px;color:rgba(255,255,255,.5)}
+
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--accent-deep) 100%);padding:56px 32px 48px;text-align:center}
+.hero-eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.5);margin-bottom:12px}
+.hero-title{font-size:36px;font-weight:800;color:#fff;margin-bottom:14px;letter-spacing:-.5px}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.7);max-width:560px;margin:0 auto;line-height:1.6}
+.hero-bar{display:flex;justify-content:center;gap:6px;margin-top:24px}
+.hero-bar-seg{height:4px;border-radius:2px}
+
+.main{max-width:960px;margin:0 auto;padding:40px 24px}
+
+/* Summary strip */
+.summary-strip{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:40px}
+.sum-card{background:#fff;border-radius:var(--radius);padding:18px 20px;border:1px solid var(--mgray);text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.sum-val{font-size:28px;font-weight:800;color:var(--ink)}
+.sum-label{font-size:12px;color:#777;margin-top:4px}
+.sum-fn{font-size:11px;font-weight:600;margin-top:8px;padding:2px 8px;border-radius:10px;display:inline-block}
+
+/* Assessment cards */
+.cards-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px}
+.assess-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--mgray);box-shadow:0 2px 8px rgba(0,0,0,.06);transition:box-shadow .2s,transform .15s;display:flex;flex-direction:column}
+.assess-card:hover{box-shadow:0 8px 28px rgba(30,41,59,.14);transform:translateY(-2px)}
+.card-banner{padding:24px;display:flex;align-items:flex-start;gap:16px}
+.card-icon{width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.card-hdr{flex:1}
+.card-framework{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;opacity:.7;margin-bottom:4px}
+.card-title{font-size:20px;font-weight:800;margin-bottom:6px}
+.card-desc{font-size:13px;opacity:.85;line-height:1.5}
+.card-body{padding:0 24px 20px;flex:1;display:flex;flex-direction:column;gap:12px}
+.card-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.stat-box{background:rgba(255,255,255,.18);border-radius:8px;padding:10px;text-align:center}
+.stat-val{font-size:20px;font-weight:800}
+.stat-label{font-size:10px;opacity:.75;margin-top:2px}
+.card-tags{display:flex;flex-wrap:wrap;gap:6px}
+.card-tag{font-size:11px;padding:3px 10px;border-radius:12px;font-weight:600}
+.card-footer{padding:16px 24px;border-top:1px solid rgba(255,255,255,.15)}
+.open-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:11px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;transition:opacity .15s;border:none}
+.open-btn:hover{opacity:.88}
+
+/* Framework context */
+.context-section{background:#fff;border-radius:var(--radius);padding:28px;border:1px solid var(--mgray);margin-bottom:32px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+.context-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:16px}
+.context-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ctx-block{padding:16px;border-radius:8px;border:1px solid var(--mgray)}
+.ctx-block h4{font-size:13px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.ctx-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.ctx-block p{font-size:12px;color:#555;line-height:1.6}
+.ctx-block ul{font-size:12px;color:#555;line-height:1.8;padding-left:16px}
+
+.footer{text-align:center;padding:24px;color:#aaa;font-size:12px}
+
+@media(max-width:700px){
+  .cards-row{grid-template-columns:1fr}
+  .summary-strip{grid-template-columns:1fr 1fr}
+  .context-grid{grid-template-columns:1fr}
+  .hero-title{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="logo-mark">
+    <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="6" fill="white" fill-opacity=".12"/>
+      <path d="M16 6l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V9l8-3z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M12.5 16l2.5 2.5 4.5-5" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="logo-wordmark">{{ORG_NAME}}</span>
+    <span class="logo-tag">NIST CSF · AI RMF</span>
+  </div>
+  <div class="header-spacer"></div>
+  <span class="header-date">Assessment Hub · Confidential</span>
+</header>
+
+<div class="hero">
+  <div class="hero-eyebrow">{{ORG_NAME}} · Security &amp; AI Risk</div>
+  <div class="hero-title">Organisational Assessment Hub</div>
+  <div class="hero-sub">Posture across cybersecurity and AI risk governance — grounded in NIST CSF 2.0 and NIST AI RMF 1.0.</div>
+  <div class="hero-bar">
+    <div class="hero-bar-seg" style="width:80px;background:#1E293B"></div>
+    <div class="hero-bar-seg" style="width:80px;background:#7C3AED"></div>
+    <div class="hero-bar-seg" style="width:80px;background:#A78BFA"></div>
+    <div class="hero-bar-seg" style="width:80px;background:#475569"></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- Summary strip -->
+  <div class="summary-strip">
+    <div class="sum-card">
+      <div class="sum-val">{{CSF_TIER}}</div>
+      <div class="sum-label">CSF Overall Tier</div>
+      <div class="sum-fn" style="background:#E2E8F0;color:var(--ink)">6 Functions</div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-val">{{AI_LEVEL}}</div>
+      <div class="sum-label">AI RMF Overall Level</div>
+      <div class="sum-fn" style="background:var(--accent-soft);color:var(--accent-deep)">4 Functions</div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-val">{{CSF_COUNT}}</div>
+      <div class="sum-label">CSF Subcategories</div>
+      <div class="sum-fn" style="background:#E2E8F0;color:var(--slate)">In scope</div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-val">{{AI_COUNT}}</div>
+      <div class="sum-label">AI RMF Subcategories</div>
+      <div class="sum-fn" style="background:var(--accent-soft);color:var(--accent-deep)">In scope</div>
+    </div>
+  </div>
+
+  <!-- Assessment cards -->
+  <div class="cards-row">
+
+    <!-- CSF Card -->
+    <div class="assess-card">
+      <div class="card-banner" style="background:var(--ink);color:#fff">
+        <div class="card-icon" style="background:rgba(255,255,255,.15)">🛡</div>
+        <div class="card-hdr">
+          <div class="card-framework" style="color:rgba(255,255,255,.6)">NIST CSF 2.0</div>
+          <div class="card-title">Cybersecurity Assessment</div>
+          <div class="card-desc">The organisation's cybersecurity posture assessed against the NIST Cybersecurity Framework 2.0 Organisational Profile.</div>
+        </div>
+      </div>
+      <div class="card-body" style="background:var(--ink);color:#fff">
+        <div class="card-stats">
+          <div class="stat-box"><div class="stat-val">{{CSF_TIER}}</div><div class="stat-label">Avg Tier</div></div>
+          <div class="stat-box"><div class="stat-val">{{CSF_COUNT}}</div><div class="stat-label">Assessed</div></div>
+          <div class="stat-box"><div class="stat-val">6</div><div class="stat-label">Functions</div></div>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Govern</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Identify</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Protect</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Detect</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Respond</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Recover</span>
+        </div>
+      </div>
+      <div class="card-footer" style="background:var(--ink);border-top:1px solid rgba(255,255,255,.12)">
+        <a href="{{CSF_FILE}}" class="open-btn" style="background:var(--accent);color:#fff">
+          Open CSF Assessment →
+        </a>
+      </div>
+    </div>
+
+    <!-- AI RMF Card -->
+    <div class="assess-card">
+      <div class="card-banner" style="background:var(--accent-deep);color:#fff">
+        <div class="card-icon" style="background:rgba(255,255,255,.15)">🤖</div>
+        <div class="card-hdr">
+          <div class="card-framework" style="color:rgba(255,255,255,.6)">NIST AI RMF 1.0</div>
+          <div class="card-title">AI Risk Assessment</div>
+          <div class="card-desc">The organisation's AI risk governance posture assessed against the NIST AI Risk Management Framework 1.0 Playbook.</div>
+        </div>
+      </div>
+      <div class="card-body" style="background:var(--accent-deep);color:#fff">
+        <div class="card-stats">
+          <div class="stat-box"><div class="stat-val">{{AI_LEVEL}}</div><div class="stat-label">Avg Level</div></div>
+          <div class="stat-box"><div class="stat-val">{{AI_COUNT}}</div><div class="stat-label">Assessed</div></div>
+          <div class="stat-box"><div class="stat-val">4</div><div class="stat-label">Functions</div></div>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Govern</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Map</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Measure</span>
+          <span class="card-tag" style="background:rgba(255,255,255,.15);color:#fff">Manage</span>
+        </div>
+      </div>
+      <div class="card-footer" style="background:var(--accent-deep);border-top:1px solid rgba(255,255,255,.12)">
+        <a href="{{AI_FILE}}" class="open-btn" style="background:var(--accent);color:#fff">
+          Open AI RMF Assessment →
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Framework context -->
+  <div class="context-section">
+    <div class="context-title">How the two frameworks relate</div>
+    <div class="context-grid">
+      <div class="ctx-block">
+        <h4><span class="ctx-dot" style="background:var(--ink)"></span> NIST CSF 2.0</h4>
+        <p>The Cybersecurity Framework covers how an organisation protects its systems, data, and operations. It addresses the security of the environment in which AI runs — but not the AI itself.</p>
+        <ul style="margin-top:8px">
+          <li>Asset inventory &amp; access controls</li>
+          <li>Incident detection &amp; response</li>
+          <li>Data protection &amp; resilience</li>
+          <li>Third-party security</li>
+        </ul>
+      </div>
+      <div class="ctx-block">
+        <h4><span class="ctx-dot" style="background:var(--accent-deep)"></span> NIST AI RMF 1.0</h4>
+        <p>The AI Risk Management Framework covers the trustworthiness, accountability, and governance of AI tools and systems themselves — risks that exist even when the underlying infrastructure is secure.</p>
+        <ul style="margin-top:8px">
+          <li>Trustworthy AI principles &amp; policies</li>
+          <li>AI use-case risk classification</li>
+          <li>Third-party AI vendor assessment</li>
+          <li>Bias, output quality &amp; auditability</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:16px;font-size:12px;color:#888;font-style:italic">Together, these two assessments give {{ORG_NAME}} a complete view of its risk posture across both conventional cybersecurity and the emerging AI risk surface.</p>
+  </div>
+
+</div>
+
+<div class="footer">Confidential — prepared for {{ORG_NAME}} · Both assessments are living documents — update the source XLS and reload.</div>
+
+</body>
+</html>
