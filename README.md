@@ -1,4 +1,4 @@
-# security-maturity-tool
+# security-maturity-matrix
 
 Licensed under Apache 2.0 (`LICENSE`); third-party material (NIST, CISA CSET, CIS) keeps its own terms, see `NOTICE`.
 CIS text is not included: you download the CIS guides yourself to rebuild the AI RMF banks (`data/ai/source/README.md`).

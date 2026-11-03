@@ -9,13 +9,13 @@ End-to-end pipeline that takes org inputs and produces interactive assessment HT
 ## Pipeline Architecture
 
 ```
-Question Bank Build  (subagents in security-maturity-tool — infrequent, runs only when sources change)
+Question Bank Build  (subagents in security-maturity-matrix — infrequent, runs only when sources change)
 ├── CSF      → CSET already exists; freshness check only
 └── AI RMF   → mapping (AI area x subcategory), then two banks (foundation, areas), generated from: AI RMF Playbook + CIS AI companion guides
                gate: skip if Playbook and CIS guides unchanged this quarter
                design: AI_RMF_Mapping_Sheet_Design.md
          ↓
-Stage 1: Questionnaire Generation  (security-maturity-tool)
+Stage 1: Questionnaire Generation  (security-maturity-matrix)
          uses question bank above + org profile + compliance status + AI usage profile
          ↓
 Stage 2: Agentic Answer Session    (gen-eval-loop — runs per org engagement)
@@ -28,7 +28,7 @@ Stage 3: HTML Generation           (Claude skills)
 
 ## Stage 1 — Questionnaire Generation
 
-**Tool:** `security-maturity-tool` (exists and working)
+**Tool:** `security-maturity-matrix` (exists and working)
 
 **Inputs:**
 - Org profile: name, industry/domain, compliance certifications held (ISO 27001, SOC2, PCI DSS)
@@ -140,7 +140,7 @@ CIS controls appear in the roadmap tab of each HTML as the "how to fix it" layer
 | Component | Status |
 |-----------|--------|
 | CSF question bank (CSET) | ✅ Exists |
-| Questionnaire generation tool (security-maturity-tool) | ✅ Exists and working |
+| Questionnaire generation tool (security-maturity-matrix) | ✅ Exists and working |
 | Gen-eval loop harness | ✅ Exists (generic, needs scenario config) |
 | CSF report skill (`nist-csf-assessment`) | ✅ In `.claude/skills/`, roadmap derived from the gaps |
 | AI RMF report skill (`nist-ai-rmf-assessment`) and hub (`nist-assessment-hub`) | ✅ In `.claude/skills/`; not yet run on a Stage 2 profile |

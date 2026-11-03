@@ -4,7 +4,7 @@ Status: decisions settled Oct 2026; build not started. Read with `README.md`, `A
 
 ## What we are building
 
-A question bank generator for NIST AI RMF 1.0 assessments, analogous to how `security-maturity-tool` uses CSET for CSF 2.0. The output is two frozen JSON files — one for producer orgs, one for consumer orgs — built from the AI RMF Playbook and the three CIS companion guides, and refreshed quarterly. The answers end up in the AI RMF profile XLS (Stage 2).
+A question bank generator for NIST AI RMF 1.0 assessments, analogous to how `security-maturity-matrix` uses CSET for CSF 2.0. The output is two frozen JSON files — one for producer orgs, one for consumer orgs — built from the AI RMF Playbook and the three CIS companion guides, and refreshed quarterly. The answers end up in the AI RMF profile XLS (Stage 2).
 
 ---
 

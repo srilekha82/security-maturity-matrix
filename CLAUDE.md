@@ -1,4 +1,4 @@
-# security-maturity-tool
+# security-maturity-matrix
 
 Stage 1 of the assessment pipeline: one questionnaire (CSF 2.0 sheet + AI RMF 1.0 sheet) for a client. `README.md`
 has the flow and file layout. **Before changing a script, prompt, command or data file, or adding a stage, read
