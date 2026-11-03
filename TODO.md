@@ -21,9 +21,30 @@ done (below). Stage 3 is in: the report skills in `.claude/skills/` (`nist-csf-a
    values trimmed, blank "Included" = no (NIST), `Tier2` / `NA` / `Same as current` handled, Target Priority shown
    but the roadmap uses Current Priority. The XLS writer writes one form only: `Yes`/`No`, `Tier N`, `High`/`Medium`/
    `Low`, maturity as an integer.
-2. Stage 2: the answer session and the XLS writer (AI RMF Priority column from `ai_priority.subcategory_priorities`,
-   already built; CSF Current Priority still needs a rule; decide
-   how the AI RMF score rolls up when several areas ask one subcategory).
+2. Stage 2 (to design in a new session, starting from the points below, agreed 2026-11-03):
+   - **Principle: as little by hand as possible.** Every column of both profiles is filled automatically: drafted by
+     an agent from the answers and evidence, checked by an evaluator in a fresh context (DESIGN_RULES rule 7). A
+     person sees only what still fails after one revision and the questions the client did not answer, never all
+     106 / 72 rows.
+   - **Columns:** current tier / maturity and the text columns (rationale, current and target state, practices,
+     roles, evidence) are drafted from the answers and checked; target tier / maturity by a rule (e.g. a sector
+     default, raised for High-priority rows); Priority by the two rules below.
+   - **Order:** collect the answers -> score them (agent + evaluator) -> apply the two priority rules -> write the two
+     XLS files from `templates/` into the run folder.
+   - **AI RMF priority:** built (`scripts/ai_priority.py`, `data/ai/severity_rules.json`, tests); Stage 2 calls
+     `ai_priority.subcategory_priorities` (input: the questionnaire's AI systems sheet). Open: data classification
+     is not an input yet (would rank data-impact rows by the most sensitive data a system handles; unknown counts
+     High, so without it findings are over-, not under-prioritised).
+   - **CSF priority:** to build, the same way (rules in a JSON file, a script applies them, no person by default).
+     CSET carries no priority and `domain_weights.json` only sets question depth; in the old profiles it was typed
+     by hand. Draft rule: High = the sector's weighted subcategories (`domain_weights.json`) or current Tier 1 with
+     a gap of 2+ tiers; at least Medium = the ISO SoA marks a mapped control applicable (`olir_iso27001.json`) but the
+     answers show no evidence, or the client's AI use touches it (`ai_impact_notes.json` + intake AI areas); else
+     Low. Runs after scoring (needs the current tier, the gap and the evidence). CIS IG levels could be added later
+     as an IDs-only CIS Controls -> CSF mapping (not in the repo).
+   - Both priorities also order the Stage 3 roadmap (High -> Phase 1, Medium -> 2, Low -> 3).
+   - Open: how the AI RMF score rolls up when several areas ask one subcategory; how the answers are collected
+     (filled questionnaire, conversation, or both).
 3. Testing after Stage 2: a fictional-company sample (filled XLS -> the three skills -> HTML), hosted in
    `docs/sample/` via GitHub Pages. Fictional data only, never a client's report.
 
