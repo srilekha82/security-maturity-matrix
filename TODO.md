@@ -21,7 +21,8 @@ done (below). Stage 3 is in: the report skills in `.claude/skills/` (`nist-csf-a
    values trimmed, blank "Included" = no (NIST), `Tier2` / `NA` / `Same as current` handled, Target Priority shown
    but the roadmap uses Current Priority. The XLS writer writes one form only: `Yes`/`No`, `Tier N`, `High`/`Medium`/
    `Low`, maturity as an integer.
-2. Stage 2: the answer session and the XLS writer (Priority column from `ai_priority.subcategory_priorities`; decide
+2. Stage 2: the answer session and the XLS writer (AI RMF Priority column from `ai_priority.subcategory_priorities`,
+   already built; CSF Current Priority still needs a rule; decide
    how the AI RMF score rolls up when several areas ask one subcategory).
 3. Testing after Stage 2: a fictional-company sample (filled XLS -> the three skills -> HTML), hosted in
    `docs/sample/` via GitHub Pages. Fictional data only, never a client's report.
@@ -104,7 +105,9 @@ done (below). Stage 3 is in: the report skills in `.claude/skills/` (`nist-csf-a
 - Every writer is checked (DESIGN_RULES rule 7, 2026-10-31): the questionnaire reviewers' rewrites now go to an Opus
   checker (`prompts/assessor_rewrite_checker.md`, `/assess-questionnaire` step 3); `record_judgements.py log --check`
   flags rewrites it does not confirm LOW (`data/common/assessor_check.json`). Not yet run on a real engagement.
-- Step 5 (severity) can wait. The step 4 decisions are in the design note, section 7.
+- Step 5 (severity) done 2026-11-02 (see "Build the AI RMF mapping", step 5): `ai_priority.py` gives the AI RMF
+  Priority column for the Stage 2 writer. Open: data classification is not an input yet; CSF Current Priority has no
+  rule yet (Stage 2 decides: assessor judgement or a rule). The step 4 decisions are in the design note, section 7.
 
 Where things stand:
 - `data/ai/mapping.json` is accepted (`data/ai/bank_build/mapping_accepted.json`): 14 AI areas, 208 rows (41
